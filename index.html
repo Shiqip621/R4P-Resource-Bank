@@ -6,48 +6,3128 @@
 <meta name="description" content="Discover networks, evidence hubs and partnership tools for nonprofit researchers and practitioners. A preliminary, community-minded resource bank.">
 <style>
 :root{--ink:#173c3b;--muted:#526966;--paper:#f5f5ed;--line:#d6ded4;--lime:#e2ef9c;--white:#fff;--orange:#c55537;--radius:16px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}button,input,select,textarea{font:inherit}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}button{cursor:pointer}a{color:inherit;text-underline-offset:4px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:4px}button:disabled{cursor:default}.wrap{max-width:1240px;margin:auto;padding:0 32px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:94px;border-bottom:1px solid var(--line)}.brand{text-decoration:none;display:flex;gap:12px;align-items:center;font-weight:700;font-size:19px;letter-spacing:-.5px}.mark{display:grid;place-items:center;width:42px;height:42px;background:var(--ink);color:var(--lime);border-radius:50%;font-size:13px;letter-spacing:0}.nav{display:flex;align-items:center;gap:26px;font-size:14px}.nav a{text-decoration:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 19px;border:1px solid var(--ink);border-radius:6px;background:transparent;color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}.btn:hover{background:#e8eddf}.btn.primary{background:var(--ink);color:white}.btn.primary:hover{background:#245450}.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.hero{padding:64px 0 52px;display:grid;grid-template-columns:1.4fr 1fr;gap:65px;align-items:center}.pill{display:inline-flex;align-items:center;gap:8px;font-size:12px;border:1px solid var(--line);padding:5px 10px;border-radius:30px}.dot{width:7px;height:7px;background:#688540;border-radius:50%}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(42px,5vw,67px);font-weight:400;line-height:1.08;letter-spacing:-2.6px;margin:23px 0}h1 em{font-weight:400;color:var(--orange)}.intro{font-size:17px;color:var(--muted);max-width:570px;margin:0 0 27px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.visual{height:335px;position:relative;background:#e7eadc;border-radius:180px 180px 20px 20px;overflow:hidden}.visual svg{width:100%;height:100%}.v-label{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:1.4px}.stats{display:flex;gap:28px;border-top:1px solid var(--line);padding:21px 0 30px;color:var(--muted);font-size:12px}.stats strong{font-size:22px;color:var(--ink);margin-right:7px;font-weight:500}.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 54px}.path{text-align:left;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);transition:background .15s}.path:hover{background:var(--lime)}.path span{display:block;font-size:12px;color:var(--muted);margin-top:5px}.path b{font-size:15px}.path i{float:right;font-style:normal;font-size:21px}.library-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px;gap:20px}h2{font-family:Georgia,serif;font-size:36px;font-weight:400;letter-spacing:-1px;margin:5px 0}.library-head p{color:var(--muted);font-size:14px;margin:0}.library{display:grid;grid-template-columns:220px 1fr;gap:34px}.filters{border-top:2px solid var(--ink);padding-top:18px}.filter-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.text-btn{border:0;background:none;color:var(--ink);padding:3px;text-decoration:underline;font-size:12px}.filters label{display:block;font-size:12px;font-weight:700;margin:19px 0 7px}.filters select{width:100%;padding:10px 8px;background:transparent;border:1px solid #b8c6bd;border-radius:5px;color:var(--ink);font-size:12px}.check{display:flex;gap:8px;align-items:center;margin-top:18px;font-size:12px}.check label{margin:0;font-weight:400}.filter-note{font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:25px}.search{position:relative}.search input{width:100%;border:1px solid #b8c6bd;border-radius:7px;background:white;padding:15px 44px 15px 17px;color:var(--ink)}.search span{position:absolute;right:17px;top:10px;font-size:25px}.results-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:19px 0;font-size:12px;color:var(--muted)}.results-bar select{border:0;background:transparent;color:var(--ink);max-width:150px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:23px;display:flex;flex-direction:column;min-height:314px;transition:box-shadow .2s,transform .2s}.card:hover{box-shadow:0 7px 24px #183d3a0c;transform:translateY(-2px)}.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.badge{font-size:10px;letter-spacing:.3px;background:#eef2e5;padding:4px 8px;border-radius:4px;display:inline-block}.badge.direct{background:var(--lime)}.bookmark{border:0;background:none;font-size:23px;color:var(--ink);padding:0 2px;line-height:1.1}.bookmark[aria-pressed=true]{color:var(--orange)}.card h3{font-family:Georgia,serif;font-weight:400;font-size:23px;line-height:1.2;margin:18px 0 9px;letter-spacing:-.35px}.meta{color:var(--muted);font-size:11px;margin-bottom:12px}.card p{font-size:13px;color:var(--muted);margin:0 0 17px}.tags{display:flex;flex-wrap:wrap;gap:5px;margin:auto 0 19px}.tag{font-size:10px;border:1px solid #dce3dc;border-radius:20px;padding:3px 8px}.card-bottom{border-top:1px solid #e8ece6;padding-top:13px;display:flex;justify-content:space-between;align-items:center}.details{border:0;background:none;padding:0;color:var(--ink);font-weight:700;font-size:12px}.card-bottom a{font-size:12px;text-decoration:none}.empty{padding:50px 20px;text-align:center;border:1px dashed var(--line);border-radius:10px;grid-column:1/-1}.notice{margin:25px 0 0;padding:16px 18px;border-left:3px solid #a4b377;background:#ebeedf;color:var(--muted);font-size:12px}.about{margin:65px 0 0;padding:35px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:65px}.about p,.about li{font-size:13px;color:var(--muted)}.about h3{font-weight:500;font-size:18px;margin:12px 0}.flow{font-size:13px;display:flex;gap:6px;flex-wrap:wrap}.flow span{border:1px solid var(--line);padding:5px 9px;border-radius:5px}.contribute{background:var(--ink);color:var(--paper);border-radius:14px;padding:30px 35px;display:flex;justify-content:space-between;align-items:center;gap:30px;margin:25px 0 45px}.contribute h2{font-size:29px}.contribute p{font-size:13px;max-width:620px;color:#d4e0d9}.contribute .btn{background:var(--lime);border-color:var(--lime);white-space:nowrap}.footer{display:flex;justify-content:space-between;gap:25px;border-top:1px solid var(--line);padding:23px 0 35px;font-size:11px;color:var(--muted)}dialog{border:0;border-radius:16px;max-width:660px;width:calc(100% - 32px);padding:30px;color:var(--ink);max-height:86vh;overflow:auto;background:var(--paper)}dialog::backdrop{background:#12333288}.close{float:right;border:0;background:transparent;color:var(--ink);font-size:25px;padding:0 6px}.dialog-content h2{font-size:30px;line-height:1.2;margin-top:17px;padding-right:22px}.dialog-content p{font-size:14px;color:var(--muted)}dl{display:grid;grid-template-columns:140px 1fr;gap:9px;font-size:12px;margin:24px 0}dt{font-weight:700}dd{margin:0;color:var(--muted);overflow-wrap:anywhere}.form label{font-size:12px;display:block;font-weight:700;margin:15px 0 5px}.form input,.form textarea{display:block;width:100%;border:1px solid #b8c6bd;border-radius:5px;padding:10px;background:white;color:var(--ink)}.form textarea{min-height:95px;resize:vertical}.form .btn{margin-top:18px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:12px 22px;border-radius:8px;font-size:13px;max-width:90%;z-index:10;box-shadow:0 5px 25px #0003}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:950px){.hero{gap:25px}.visual{height:290px}.wrap{padding:0 23px}.library{grid-template-columns:180px 1fr;gap:22px}.card{padding:18px}.nav{gap:15px}}@media(max-width:700px){.top{min-height:78px;flex-wrap:wrap;padding:17px 0}.nav{gap:16px;font-size:12px}.nav .btn{padding:7px 10px;font-size:12px}.brand{font-size:16px}.hero{grid-template-columns:1fr;padding:34px 0}.visual{display:none}h1{font-size:48px;letter-spacing:-1.8px}.intro{font-size:16px}.stats{gap:16px;flex-wrap:wrap}.stats strong{font-size:19px}.paths{grid-template-columns:1fr;gap:9px;margin-bottom:35px}.path{padding:15px 18px}.library{grid-template-columns:1fr}.filters{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.filter-title,.filter-note{grid-column:1/-1}.filter-title{margin:0}.filters label{margin-top:10px}.filter-note{margin:15px 0 0;padding-top:12px}.check{margin-top:15px}.cards{grid-template-columns:1fr}.library-head{align-items:flex-start}.library-head h2{font-size:31px}.library-head .btn{font-size:11px;padding:9px}.about{grid-template-columns:1fr;gap:20px;margin-top:40px}.contribute{padding:25px;display:block}.contribute .btn{margin-top:12px}.footer{flex-direction:column;gap:8px}dialog{padding:24px}dl{grid-template-columns:1fr;gap:5px}dd{margin-bottom:8px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Version 2: controlled facets using the preliminary mapping framework. */
+.library{display:block}.filters{display:block;padding:21px 23px;background:#ecefe3;border:1px solid var(--line);border-top:2px solid var(--ink);border-radius:0 0 12px 12px;margin-bottom:25px}.filter-title{margin-bottom:10px}.filter-title b{font-size:18px}.facet-basics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 18px}.filters select{background:#f8f9f2;font-size:13px;padding:10px 9px;width:100%}.filters label{margin-top:12px}.facet-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:21px;align-items:start}.facet-group{background:#f8f9f2;border:1px solid #c5d0c1;border-radius:7px;padding:11px 13px}.facet-group summary{cursor:pointer;font-size:13px;font-weight:700}.facet-group summary small{float:right;font-weight:400;font-size:11px;color:var(--muted);margin-right:2px}.facet-options{padding:10px 0 0;display:grid;gap:7px;max-height:none;overflow:visible}.filters .facet-choice{display:flex;gap:8px;align-items:flex-start;margin:0;font-size:12px;font-weight:400;line-height:1.45;cursor:pointer;padding:3px}.facet-choice input{flex-shrink:0;margin-top:3px;accent-color:var(--ink);width:15px;height:15px}.filter-toggles{display:flex;gap:14px 25px;align-items:center;flex-wrap:wrap;margin-top:17px}.check{margin:0;align-items:flex-start}.filters .check label{margin:0;font-size:12px;font-weight:400}.check input{accent-color:var(--ink);flex-shrink:0;margin-top:4px}.filter-note{margin:15px 0 0;padding-top:13px;font-size:12px}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.card{min-height:340px;padding:23px}.card h3{font-size:24px}.card p{font-size:13px}.meta{line-height:1.6}.badges{display:flex;flex-wrap:wrap;gap:5px}.new-badge{background:#f7e6dc;color:#8e3d29}.tags{margin-top:auto}.load-wrap{text-align:center;margin-top:24px}.detail-section{border-top:1px solid var(--line);padding-top:18px;margin-top:25px}.dialog-content dl{grid-template-columns:155px 1fr;margin:15px 0}.dialog-content dt,.dialog-content dd{font-size:12px}.source-list{font-size:12px;padding-left:18px}.source-list li{margin-bottom:9px}.review-note{font-size:11px!important;background:#e9eddf;padding:13px;border-radius:6px}.original{font-size:12px;margin-top:15px}.original summary{cursor:pointer}.about .flow{margin-top:18px}.about .flow span{background:#edf0e4}.framework-note{font-size:12px!important}.library-head .btn{flex-shrink:0}.results-bar{font-size:12px;gap:15px}.results-bar select{max-width:190px}.geo-help{margin:11px 0 0;font-size:11px;color:var(--muted)}
+@media(max-width:1000px){.facet-basics{grid-template-columns:repeat(3,minmax(0,1fr))}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.facet-groups{grid-template-columns:1fr}.facet-options{grid-template-columns:1fr 1fr;max-height:none}.facet-group summary small{float:none;margin-left:12px}}
+@media(max-width:700px){.filters{padding:17px}.facet-basics{grid-template-columns:1fr 1fr;gap:0 12px}.facet-groups{grid-template-columns:1fr}.facet-options{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.card{min-height:300px}.filter-title b{font-size:16px}.filters select{font-size:12px}.filter-toggles{gap:12px 17px}.results-bar{align-items:flex-start}.results-bar select{max-width:150px;font-size:11px}.dialog-content dl{grid-template-columns:1fr}.dialog-content dd{margin-bottom:8px}.dialog-content h2{font-size:28px}}
+
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="top"><a class="brand" href="#"><span class="mark">R4P</span>Resource Bank</a><nav class="nav" aria-label="Main navigation"><a href="#library">Explore</a><a href="#about">Our approach</a><button class="btn" data-suggest>Suggest a resource ↗</button></nav></header>
 <main>
-<section class="hero" aria-labelledby="hero-title"><div><span class="pill"><span class="dot"></span> A growing collection · Preliminary edition</span><h1 id="hero-title">Good research.<br>Meaningful connections.<br><em>Better practice.</em></h1><p class="intro">A starting point for researchers and practitioners in the nonprofit sector. Discover evidence, build partnerships, and learn from communities bridging research and practice.</p><div class="hero-actions"><a class="btn primary" href="#library">Explore the resource bank ↓</a><a class="btn" href="#about">How to use this collection</a></div></div><div class="visual" aria-hidden="true"><svg viewBox="0 0 420 335"><g fill="none" stroke="#b2c1a8"><circle cx="210" cy="164" r="125"/><circle cx="210" cy="164" r="89" stroke-dasharray="3 6"/><path d="M100 120L210 235L325 115L100 120M210 54L100 120M210 54L325 115M210 54L210 235M100 120L80 250M325 115L344 255M80 250L210 235L344 255"/></g><circle cx="100" cy="120" r="53" fill="#173c3b"/><circle cx="325" cy="115" r="53" fill="#c55537"/><circle cx="210" cy="235" r="53" fill="#e2ef9c"/><g text-anchor="middle" font-family="Arial" font-size="12"><text x="100" y="125" fill="white">Research</text><text x="325" y="120" fill="white">Practice</text><text x="210" y="231" fill="#173c3b">Shared</text><text x="210" y="249" fill="#173c3b">knowledge</text></g><g fill="#879d71"><circle cx="210" cy="54" r="8"/><circle cx="80" cy="250" r="8"/><circle cx="344" cy="255" r="8"/></g></svg><div class="v-label">CONNECTING KNOWLEDGE & PEOPLE</div></div></section>
-<div class="stats"><span><strong id="total">31</strong>mapped initiatives</span><span><strong>Global</strong>perspective</span><span><strong>Research ↔ Practice</strong>shared learning</span></div>
+<section class="hero" aria-labelledby="hero-title"><div><span class="pill"><span class="dot"></span> A platform of platforms · Working collection</span><h1 id="hero-title">Good research.<br>Meaningful connections.<br><em>Better practice.</em></h1><p class="intro">A curated gateway for nonprofit researchers and practitioners. Find the platforms, networks and partnership infrastructures that connect evidence, people and practice.</p><div class="hero-actions"><a class="btn primary" href="#library">Explore the resource bank ↓</a><a class="btn" href="#about">How to use this collection</a></div></div><div class="visual" aria-hidden="true"><svg viewBox="0 0 420 335"><g fill="none" stroke="#b2c1a8"><circle cx="210" cy="164" r="125"/><circle cx="210" cy="164" r="89" stroke-dasharray="3 6"/><path d="M100 120L210 235L325 115L100 120M210 54L100 120M210 54L325 115M210 54L210 235M100 120L80 250M325 115L344 255M80 250L210 235L344 255"/></g><circle cx="100" cy="120" r="53" fill="#173c3b"/><circle cx="325" cy="115" r="53" fill="#c55537"/><circle cx="210" cy="235" r="53" fill="#e2ef9c"/><g text-anchor="middle" font-family="Arial" font-size="12"><text x="100" y="125" fill="white">Research</text><text x="325" y="120" fill="white">Practice</text><text x="210" y="231" fill="#173c3b">Shared</text><text x="210" y="249" fill="#173c3b">knowledge</text></g><g fill="#879d71"><circle cx="210" cy="54" r="8"/><circle cx="80" cy="250" r="8"/><circle cx="344" cy="255" r="8"/></g></svg><div class="v-label">CONNECTING KNOWLEDGE & PEOPLE</div></div></section>
+<div class="stats"><span><strong id="total">51</strong>mapped initiatives</span><span><strong>Global</strong>perspective</span><span><strong>Research ↔ Practice</strong>shared learning</span></div>
 <section class="paths" aria-label="Explore by purpose"><button class="path" data-path="evidence"><i>↗</i><b>Find evidence & tools</b><span>Bring useful knowledge into your work</span></button><button class="path" data-path="community"><i>↗</i><b>Connect with a community</b><span>Learn alongside researchers and practitioners</span></button><button class="path" data-path="partnership"><i>↗</i><b>Build a research partnership</b><span>Explore collaboration and co-production</span></button></section>
 <section id="library" aria-labelledby="library-title"><div class="library-head"><div><div class="eyebrow">The collection</div><h2 id="library-title">Find your next connection.</h2><p>Explore nonprofit resources and transferable models from adjacent fields.</p></div><button class="btn" id="export">Export results ↓</button></div>
-<div class="library"><aside class="filters" aria-label="Filter resources"><div class="filter-title"><b>Refine your search</b><button class="text-btn" id="reset">Reset all</button></div><div><label for="scope">Relevance to the sector</label><select id="scope"><option value="">All resources</option><option>Nonprofit / social sector</option><option>Adjacent / cross-sector</option></select></div><div><label for="region">Geographic scope</label><select id="region"><option value="">All regions</option><option>Global</option><option>Canada</option><option>United States</option><option>United Kingdom</option><option>Australia</option><option>Africa</option><option>Indo-Pacific</option><option>North America</option></select></div><div><label for="sector">Sector / field</label><select id="sector"><option value="">All fields</option></select></div><div><label for="purpose">What do you need?</label><select id="purpose"><option value="">All functions</option><option value="evidence">Evidence & tools</option><option value="community">Networks & communities</option><option value="partnership">Partnerships & co-production</option><option value="learning">Training & capacity building</option><option value="funding">Funding & grants</option></select></div><div><label for="engagement">Engagement depth</label><select id="engagement"><option value="">All levels</option><option>Access</option><option>Exchange</option><option>Connection</option><option>Collaboration</option><option>Co-production</option></select></div><div class="check"><input id="saved" type="checkbox"><label for="saved">My saved resources</label></div><div class="check"><input id="historical" type="checkbox"><label for="historical">Include historical examples</label></div><p class="filter-note">Cross-sector examples offer useful models; inclusion does not imply a nonprofit focus. Engagement codes are provisional, not quality ratings.</p></aside>
-<div><div class="search"><label class="sr" for="search">Search resources</label><input id="search" type="search" placeholder="Search by name, topic, or keyword…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div class="results-bar"><span id="count" role="status" aria-live="polite"></span><div><label class="sr" for="sort">Sort resources</label><select id="sort"><option value="relevance">Nonprofit resources first</option><option value="az">Name: A–Z</option></select></div></div><div class="cards" id="cards"></div><p class="notice">Working collection, not a verified directory. Based on the preliminary mapping dated 2 October 2026. Descriptions and classifications require curator review; availability, membership and access conditions may change. External links open in a new tab.</p></div></div></section>
-<section class="about" id="about"><div><div class="eyebrow">Our approach</div><h2>More than a list of links.</h2><p>This prototype maps the infrastructure connecting research and practice: networks, resource hubs, intermediaries and sustained partnerships. It is intended for nonprofit researchers, practitioners, community partners and knowledge brokers.</p><p>Each entry explains its functions and why its model may be useful. The collection includes adjacent fields such as education, health and public policy to support learning across sectors.</p><div class="flow"><span>Access</span><span>Exchange</span><span>Connection</span><span>Collaboration</span><span>Co-production</span></div></div><div><h3>Use the bank in three steps</h3><ol><li>Start with your purpose, then narrow by field or geography.</li><li>Open a resource’s details to understand its model and potential relevance.</li><li>Visit the original source to check current opportunities and participation requirements.</li></ol><p>Save a shortlist on this device or export the filtered collection as CSV. Saved items stay in this browser; they are not shared between devices.</p><p><b>Scope:</b> sustained initiatives with an explicit research–practice bridging function. Historical examples are hidden by default. This is an independent working prototype; it does not imply endorsement by ISTR or any listed organization.</p></div></section>
-<section class="contribute"><div><div class="eyebrow">Help the collection grow</div><h2>Know a resource we should include?</h2><p>Suggest a network, toolkit or partnership initiative. Community input can help make this collection more representative across regions and fields.</p></div><button class="btn" data-suggest>Prepare a suggestion ↗</button></section>
-</main><footer class="footer"><span>R4P Resource Bank · Working prototype · October 2026</span><span>No account required. No analytics. Saved resources stay on your device.</span></footer>
+<div class="library"><aside class="filters" aria-label="Filter platforms using the mapping framework">
+<div class="filter-title"><b>Refine your search</b><button class="text-btn" id="reset">Reset all</button></div>
+<div class="facet-basics">
+<div><label for="scope">Relevance to the sector</label><select id="scope"><option value="">All resources</option><option>Nonprofit / social sector</option><option>Adjacent / cross-sector</option></select></div>
+<div><label for="region">Geographic scope</label><select id="region"><option value="">All continents & global</option></select></div>
+<div><label for="sector">Sector / field</label><select id="sector"><option value="">All 8 fields</option></select></div>
+<div><label for="user">Target users</label><select id="user"><option value="">All users</option></select></div>
+<div><label for="model">Institutional model</label><select id="model"><option value="">All models</option></select></div>
+<div><label for="engagement">Engagement depth</label><select id="engagement"><option value="">All levels</option><option>Access</option><option>Exchange</option><option>Connection</option><option>Collaboration</option><option>Co-production</option></select></div>
+</div>
+<div class="facet-groups">
+<details class="facet-group" id="facet-functions"><summary>Functions <small id="selected-functions">Any</small></summary><div class="facet-options" id="options-functions"></div></details>
+<details class="facet-group" id="facet-mechanisms"><summary>Mechanisms <small id="selected-mechanisms">Any</small></summary><div class="facet-options" id="options-mechanisms"></div></details>
+<details class="facet-group" id="facet-directions"><summary>Knowledge exchange direction <small id="selected-directions">Any</small></summary><div class="facet-options" id="options-directions"></div></details>
+</div>
+<div class="filter-toggles">
+<div class="check" id="include-global-wrap" hidden><input id="include-global" type="checkbox" checked><label for="include-global">Also include global-access platforms</label></div>
+<div class="check"><input id="saved" type="checkbox"><label for="saved">My saved resources</label></div>
+<div class="check"><input id="new-only" type="checkbox"><label for="new-only">New additions (<span id="new-count">20</span>)</label></div>
+<div class="check"><input id="historical" type="checkbox"><label for="historical">Include historical examples</label></div>
+</div>
+<p class="filter-note">Select multiple options within a group to match any of them; different filter groups combine. Sector / field uses 8 broad categories. Functions describe <b>what</b> a platform offers; mechanisms describe <b>how</b> it works. Tags remain provisional.</p>
+<p class="geo-help">Geographic scope uses seven continents: Africa, Antarctica, Asia, Europe, North America, South America and Oceania (including Australia). Global is a separate tag. A global-access platform is not evidence of a programme in every country; eligibility still depends on the provider. Host location is shown separately in each record.</p>
+</aside>
+<div><div class="search"><label class="sr" for="search">Search resources</label><input id="search" type="search" placeholder="Search by name, topic, or keyword…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div class="results-bar"><span id="count" role="status" aria-live="polite"></span><div><label class="sr" for="sort">Sort resources</label><select id="sort"><option value="relevance">Nonprofit resources first</option><option value="az">Name: A–Z</option><option value="newest">New additions first</option></select></div></div><div class="cards" id="cards"></div><div class="load-wrap"><button id="load-more" class="btn" hidden>Show more resources ↓</button></div><p class="notice">Working collection: 31 initiatives from the preliminary mapping (2 October 2026), plus 20 web-researched additions (24 October 2026). Original records have been provisionally recoded; they have not all been reverified. New records link to official sources. Analytical tags are not quality ratings. Current access, fees and opportunities must be checked with each provider.</p></div></div></section>
+<section class="about" id="about"><div><div class="eyebrow">Our approach</div><h2>A platform of platforms.</h2><p>R4P Resource Bank is a <b>platform of platforms</b>: a curated gateway to existing research–practice networks, evidence hubs, knowledge brokers and partnership infrastructures relevant to the nonprofit sector.</p><p>It helps researchers and practitioners discover <b>where to go, what each platform offers, whom it serves and how to engage</b>. Resources remain with their original providers; this bank makes a fragmented ecosystem easier to navigate and compare.</p><p>Alongside nonprofit and philanthropic initiatives, we include transferable models from community development, education, health, public policy and international development. Related initiatives may share a host; each record maps an identifiable platform or sustained infrastructure.</p><div class="flow"><span>Discover platforms</span><span>Compare their roles</span><span>Connect with providers</span></div></div><div><h3>One shared mapping framework</h3><p><b>Basic characteristics:</b> name and host, country and geographic scope, sector, target users and institutional model.</p><p><b>Functions:</b> what the platform makes possible, from dissemination and capacity building to matchmaking and co-production.</p><p><b>Mechanisms:</b> how it operates, such as searchable repositories, communities of practice, training, calls for partners or practitioner research questions.</p><p><b>Knowledge exchange:</b> Research → Practice; Practice → Research; Research ↔ Practice; or Research + Practice → Co-produced Knowledge.</p><p class="framework-note">The first 31 records retain their original mapping text alongside provisional new codes. The 20 additions include source links and review dates. Missing tags mean not yet confirmed. This is a working sample, not a comprehensive directory or an endorsement by ISTR or listed organizations.</p><p class="framework-note">Saved resources stay in this browser. CSV exports include all matching records and their coded characteristics, even when only part of the results is displayed.</p></div></section>
+<section class="contribute"><div><div class="eyebrow">Help the collection grow</div><h2>Know a resource we should include?</h2><p>Suggest a network, hub or partnership initiative. The current form prepares a downloadable draft; it does not send a submission to the curator.</p></div><button class="btn" data-suggest>Prepare a suggestion draft ↗</button></section>
+</main><footer class="footer"><span>R4P Resource Bank · Mapping framework edition · Updated 24 October 2026</span><span>No account required. No analytics. Saved resources stay on your device.</span></footer>
 </div>
 <dialog id="modal"><button class="close" aria-label="Close dialog">×</button><div class="dialog-content" id="modal-content"></div></dialog><div class="toast" id="toast" role="status" hidden></div>
 <script>
-// EDIT HERE: After creating your GitHub repository, optionally add its URL.
-// Example: https://github.com/YOUR-USERNAME/r4p-resource-bank
+// Optional: add your Google Form URL here when you have created a submission form.
+const SUGGESTION_FORM_URL = '';
+// Existing GitHub submission option is preserved; set this only if you want issue-based suggestions.
 const REPOSITORY_URL = '';
-// Resource data is drawn from the supplied preliminary mapping, not a fresh systematic review.
-const RESOURCES = [{"id":"1","name":"William T. Grant Foundation RPP Hub","sector":"Education","region":"United States","model":"RPP resource hub","functions":"Partnership tools; joint research agendas; data sharing; funding; evaluation","direction":"Research–Practice (reciprocal)","engagement":"Collaboration","note":"Strong benchmark for a one-stop partnership lifecycle resource.","url":"https://rpp.wtgrantfoundation.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"2","name":"NNERPP / RPP Knowledge Clearinghouse","sector":"Education","region":"United States","model":"Network + clearinghouse","functions":"Curated resources; partnership network; peer learning; RPP development","direction":"Research–Practice (reciprocal)","engagement":"Collaboration","note":"Combines a member network with a structured resource repository; especially relevant to R4P.","url":"https://nnerpp.rice.edu/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"3","name":"Transforming Evidence Network","sector":"Cross-sector","region":"Global","model":"Cross-sector network","functions":"Networking; knowledge sharing; matchmaking; evidence-use innovation","direction":"Research–Practice (reciprocal)","engagement":"Connection–Collaboration","note":"Connects researchers, practitioners, funders, community leaders, and intermediaries across an evidence ecosystem.","url":"https://www.pew.org/en/research-and-analysis/fact-sheets/2023/04/the-transforming-evidence-network","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"4","name":"Research Impact Canada","sector":"Cross-sector","region":"Canada","model":"Knowledge-mobilization network","functions":"Resources; training; communities of practice; institutional capacity building","direction":"Research–Practice (reciprocal)","engagement":"Exchange–Collaboration","note":"Useful model for integrating resources, training, and community building.","url":"https://researchimpact.ca/about-us/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"5","name":"Community-Based Research Canada","sector":"Community research","region":"Canada","model":"Membership network","functions":"Communities of practice; webinars; training; member network; conferences; resources","direction":"Research–Practice–Community (reciprocal)","engagement":"Collaboration–Co-production","note":"Treats community organizations as active network participants rather than knowledge recipients.","url":"https://www.communityresearchcanada.ca/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"6","name":"Research to Action","sector":"International development","region":"Global","model":"Knowledge platform","functions":"Research uptake; communication resources; researcher/practitioner experiences","direction":"Research to Practice / Research–Practice (reciprocal)","engagement":"Access–Exchange","note":"Strong practitioner-friendly presentation of research and knowledge-mobilization resources.","url":"https://www.researchtoaction.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"7","name":"What Works Network","sector":"Public services","region":"United Kingdom","model":"Evidence intermediary network","functions":"Evidence synthesis; commissioning; translation; capacity for evidence use","direction":"Two-way research–practice exchange","engagement":"Access–Exchange","note":"Illustrates how evidence infrastructure can build both supply of and demand for usable evidence.","url":"https://www.gov.uk/guidance/what-works-network","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"8","name":"Campbell Collaboration","sector":"Social policy","region":"Global","model":"Evidence synthesis infrastructure","functions":"Systematic reviews; evidence and gap maps; knowledge translation","direction":"Research to Practice","engagement":"Access","note":"Useful benchmark for evidence organization, taxonomy, and searchable resources.","url":"https://www.campbellcollaboration.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"9","name":"Centre for Homelessness Impact","sector":"Homelessness","region":"United Kingdom","model":"What Works / evidence hub","functions":"Evidence tools; practitioner resources; evidence-informed improvement","direction":"Research to Practice / Research–Practice (reciprocal)","engagement":"Access–Collaboration","note":"Strong example of converting research evidence into usable practitioner-facing tools.","url":"https://www.homelessnessimpact.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"10","name":"Youth Endowment Fund Evidence Toolkit","sector":"Youth services","region":"United Kingdom","model":"Interactive evidence platform","functions":"Evidence and gap maps; accessible toolkit; implementation information","direction":"Research to Practice","engagement":"Access","note":"Useful model for separating underlying evidence from an accessible practitioner interface.","url":"https://youthendowmentfund.org.uk/toolkit/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"11","name":"UK Parliament Knowledge Exchange Unit","sector":"Research–policy","region":"United Kingdom","model":"Brokerage intermediary","functions":"Training; engagement opportunities; fellowships; researcher–Parliament connections","direction":"Research–Policy/Practice (reciprocal)","engagement":"Connection–Collaboration","note":"Demonstrates active brokerage rather than passive resource provision.","url":"https://www.parliament.uk/get-involved/research-impact-at-the-uk-parliament/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"12","name":"Engagement Australia","sector":"University–community","region":"Australia","model":"Membership / network infrastructure","functions":"Networking; resources; professional development; university–community partnerships","direction":"Research–Community (reciprocal)","engagement":"Exchange–Collaboration","note":"Useful model for reciprocal university–community engagement and professional community building.","url":"https://engagementaustralia.org.au/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"13","name":"Stanford Social Innovation Review","sector":"Social sector","region":"Global","model":"Knowledge dissemination platform","functions":"Research/practice articles; webinars; conferences; podcasts","direction":"Research–Practice (reciprocal), mainly dissemination","engagement":"Access–Exchange","note":"Highly relevant third-sector example of presenting research- and practice-based knowledge in a shared space.","url":"https://ssir.org/","scope":"Nonprofit / social sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Official source located during template preparation; full coding not revalidated."},{"id":"14","name":"OECD Evidence Web for Education","sector":"Education","region":"Global","model":"Meta-platform + community","functions":"Meta-portal; resource bank; knowledge-broker network; research–practice community","direction":"Research–Practice (reciprocal) ↔ Broker","engagement":"Exchange–Collaboration","note":"Interesting platform-of-platforms model that could inform an R4P meta-resource.","url":"https://www.oecd.org/en/about/projects/strengthening-the-impact-of-education-research.html","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Links to the related OECD education-research project; exact Evidence Web page requires review."},{"id":"15","name":"WikiCharities","sector":"Nonprofit sector","region":"Global","model":"Nonprofit database + collaboration infrastructure","functions":"Searchable nonprofit database; validation; resources; collaborative projects; connections","direction":"Practice ↔ Practice; research/resource linkage","engagement":"Connection–Collaboration","note":"Useful third-sector-specific model combining searchable organizational data, resources, transparency, and collaboration functions.","url":"https://www.wikicharities.org/","scope":"Nonprofit / social sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"16","name":"Seton Hall Global NGO Education Survey","sector":"Nonprofit education","region":"Global","model":"Directory / research resource infrastructure","functions":"Global directory of nonprofit management and philanthropy programs and courses; regional/country browsing","direction":"Research → Practice/Education","engagement":"Access","note":"Adjacent resource infrastructure showing how a global, field-specific directory can organize and surface dispersed nonprofit-sector information.","url":"https://tltc.shu.edu/projects/global_ngos/asia_index.php","scope":"Nonprofit / social sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"17","name":"Center for Advancing Research Impact in Society (ARIS)","sector":"Cross-sector","region":"Global","model":"Research-impact network + resource hub","functions":"Resource library; training; community; institutional initiatives; cross-sector partnerships","direction":"Research ↔ Practice ↔ Community","engagement":"Exchange–Collaboration","note":"Strong model for combining research-impact resources, professional community, institutional capacity building, and cross-sector partnerships.","url":"https://researchinsociety.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"18","name":"Campus Compact","sector":"Higher education–community","region":"United States","model":"Membership network + engagement infrastructure","functions":"Communities of practice; engaged scholarship; resources; grants; networking; campus-community partnerships","direction":"Research ↔ Community","engagement":"Exchange–Collaboration","note":"Large network supporting community-engaged scholarship and reciprocal campus-community partnerships, with tools and professional communities.","url":"https://www.compact.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"19","name":"EPPI Centre","sector":"Public policy","region":"United Kingdom / Global","model":"Evidence synthesis + engagement centre","functions":"Systematic reviews; stakeholder participation; training; guidance; review tools","direction":"Research ↔ Policy/Practice/Public","engagement":"Access–Collaboration","note":"Shows how evidence synthesis infrastructure can incorporate practitioner/public needs and participation in the review process.","url":"https://eppi.ioe.ac.uk/cms/Default.aspx?tabid=2400","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"20","name":"3ie Evidence Hub","sector":"International development","region":"Global","model":"Evidence repository + gap-mapping platform","functions":"Impact evaluation repository; systematic reviews; evidence gap maps; stakeholder-informed mapping","direction":"Research → Practice/Policy","engagement":"Access–Exchange","note":"Highly relevant international-development model for searchable evidence, gap identification, and stakeholder-informed research prioritisation.","url":"https://www.3ieimpact.org/evidence-hub","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"21","name":"CTN+ Community-Centred Knowledge Mobilization Hub","sector":"Health","region":"Canada","model":"Community-centred KM hub","functions":"Community participation in research priorities; KM resources; training; co-production support","direction":"Research + Community → Co-produced Knowledge","engagement":"Collaboration–Co-production","note":"Clear example of embedding community and knowledge users throughout research, from priority setting to dissemination.","url":"https://www.ctnplus.ca/knowledge-mobilization-hub/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"22","name":"National Co-ordinating Centre for Public Engagement (NCCPE)","sector":"Higher education–public","region":"United Kingdom","model":"Engagement support centre + professional network","functions":"Resources; training; consultancy; accreditation; professional network; community-university partnership guidance","direction":"Research ↔ Public/Community","engagement":"Exchange–Collaboration","note":"Useful infrastructure model for institutionalising engagement and building long-term skills, standards, networks, and organizational capacity.","url":"https://www.publicengagement.ac.uk/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"23","name":"Evidence Aid","sector":"Humanitarian","region":"Global","model":"Evidence access platform (historical/inactive)","functions":"Systematic-review resources for humanitarian decision-makers; evidence access and use","direction":"Research → Humanitarian Practice","engagement":"Access","note":"Historical example of a sector-specific evidence bridge; useful for understanding sustainability and lifecycle issues because the charity closed in 2024.","url":"https://evidenceaid.org/","scope":"Adjacent / cross-sector","historical":true,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"24","name":"On Think Tanks","sector":"Research–policy","region":"Global","model":"Knowledge platform + community","functions":"Research on think tanks; learning resources; conferences; capacity building; research agenda","direction":"Research ↔ Policy Practice","engagement":"Access–Exchange","note":"Relevant adjacent case focused on how policy research organizations produce, communicate, and use research in policy and practice.","url":"https://onthinktanks.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"25","name":"SickKids Knowledge Translation Program","sector":"Health","region":"Canada / Global","model":"KT capacity-building program + resource hub","functions":"Training; professional certificates; implementation tools; evidence-based KT resources","direction":"Research → Practice / reciprocal engagement","engagement":"Access–Exchange","note":"Strong professional-development model for building knowledge-translation capacity and turning evidence into implementable practice.","url":"https://www.sickkids.ca/en/learning/our-programs/knowledge-translation-program/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"26","name":"Africa Evidence Network (AEN)","sector":"Evidence-informed decision-making","region":"Africa","model":"Pan-African evidence network","functions":"Networking; knowledge sharing; capacity exchange; events; evidence intermediary community","direction":"Research ↔ Policy ↔ Practice ↔ Civil Society","engagement":"Exchange–Collaboration","note":"Especially valuable Global South example connecting researchers, policymakers, civil society, citizens, and evidence intermediaries across Africa.","url":"https://africaevidencenetwork.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"27","name":"Research for Development Impact (RDI) Network","sector":"International development","region":"Indo-Pacific","model":"Researcher–practitioner membership network","functions":"Brokerage; knowledge exchange; research/evaluation capacity; practitioner–researcher connections","direction":"Research ↔ Practice ↔ Policy","engagement":"Exchange–Collaboration","note":"Very close comparator for R4P: explicitly describes itself as a community of academics and practitioners and brokers connections and knowledge exchange.","url":"https://rdinetwork.org.au/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"28","name":"Evidence Synthesis International (ESI)","sector":"Cross-sector","region":"Global","model":"Global evidence-synthesis partnership","functions":"Capacity building; resource sharing; methods collaboration; advocacy; policy engagement; calls for collaboration","direction":"Research ↔ Evidence Users","engagement":"Exchange–Collaboration","note":"Platform-of-organizations model showing how an international partnership can coordinate shared learning, resources, and collaboration opportunities.","url":"https://evidencesynthesis.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"29","name":"Knowledge Exchange Hub","sector":"Sustainable development","region":"Global","model":"Knowledge-exchange + networking initiative","functions":"Academic knowledge exchange; strategic networking; capacity building; community collaboration","direction":"Research ↔ Community/Practice","engagement":"Exchange–Collaboration","note":"Smaller initiative illustrating a practice-oriented knowledge-exchange model linking academia, communities, and sustainable-development action.","url":"https://knowledgeexchangehub.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"30","name":"Evidence Exchange Network (EENet)","sector":"Mental health & addictions","region":"Canada","model":"Knowledge-exchange network + online community","functions":"Evidence briefs; resource library; EENet Connect; communities of practice/interest; networking","direction":"Research ↔ Practice ↔ Lived Experience","engagement":"Exchange–Collaboration","note":"Strong digital-community model: combines accessible evidence with member profiles, peer exchange, CoPs, and active collaboration.","url":"https://kmb.camh.ca/eenet/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."},{"id":"31","name":"Community-Campus Partnerships for Health (CCPH)","sector":"Community-engaged health research","region":"North America / Global","model":"Membership network + partnership infrastructure","functions":"Community-academic partnerships; resource library; training; technical assistance; research; coalition building","direction":"Research + Community → Co-produced Knowledge","engagement":"Collaboration–Co-production","note":"Highly relevant model of equitable community–academic partnership infrastructure, including shared decision-making and community-engaged research resources.","url":"https://ccphealth.org/","scope":"Adjacent / cross-sector","historical":false,"source":"Preliminary mapping, 2 October 2026","linkNote":"Link supplied in source document; current availability not reviewed."}];
+const TAXONOMY = {
+  "sectors": [
+    "Nonprofit & philanthropy",
+    "Community development & civic participation",
+    "Education & youth",
+    "Health & wellbeing",
+    "Public policy & services",
+    "International development & humanitarian action",
+    "Environment & sustainability",
+    "Cross-sector research & impact"
+  ],
+  "functions": [
+    "Research dissemination",
+    "Knowledge translation/mobilization",
+    "Resource sharing",
+    "Capacity building",
+    "Networking/community building",
+    "Researcher–practitioner matchmaking",
+    "Collaborative research opportunities",
+    "Funding opportunities",
+    "Research agenda setting",
+    "Co-production"
+  ],
+  "mechanisms": [
+    "Searchable resource repositories",
+    "Researcher/practitioner directories",
+    "Communities of practice",
+    "Webinars and events",
+    "Training",
+    "Matchmaking",
+    "Collaborative grants",
+    "Calls for partners",
+    "Practitioner research-question submission",
+    "Joint publications and knowledge products"
+  ],
+  "directions": [
+    "Research → Practice",
+    "Practice → Research",
+    "Research ↔ Practice",
+    "Research + Practice → Co-produced Knowledge"
+  ],
+  "models": [
+    "Resource / evidence hub",
+    "Network / community of practice",
+    "Knowledge broker / intermediary",
+    "Partnership infrastructure",
+    "Research / capacity-building centre",
+    "Directory / collaborative database",
+    "Funding / research-support infrastructure"
+  ],
+  "users": [
+    "Researchers",
+    "Practitioners",
+    "Community partners",
+    "Policymakers",
+    "Funders",
+    "Knowledge brokers",
+    "Universities / institutions"
+  ],
+  "continents": [
+    "Africa",
+    "Antarctica",
+    "Asia",
+    "Europe",
+    "North America",
+    "South America",
+    "Oceania"
+  ]
+};
+// ADD NEW RECORDS HERE. Keep IDs unique; use the controlled terms in TAXONOMY.
+// Resource tags are provisional analytical codes, not provider endorsements.
+const RESOURCES = [
+  {
+    "id": "1",
+    "name": "William T. Grant Foundation RPP Hub",
+    "sector": "Education",
+    "region": "United States",
+    "model": "RPP resource hub",
+    "functions": [
+      "Resource sharing",
+      "Funding opportunities",
+      "Research agenda setting"
+    ],
+    "direction": "Research–Practice (reciprocal)",
+    "engagement": "Collaboration",
+    "note": "Strong benchmark for a one-stop partnership lifecycle resource.",
+    "url": "https://rpp.wtgrantfoundation.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Education",
+    "sectors": [
+      "Education & youth"
+    ],
+    "host": "William T. Grant Foundation",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Partnership tools; joint research agendas; data sharing; funding; evaluation",
+    "originalDirection": "Research–Practice (reciprocal)",
+    "originalRegion": "United States",
+    "mechanisms": [],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Funders"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Partnership tools; joint research agendas; data sharing; funding; evaluation",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://rpp.wtgrantfoundation.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "2",
+    "name": "NNERPP / RPP Knowledge Clearinghouse",
+    "sector": "Education",
+    "region": "United States",
+    "model": "Network + clearinghouse",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Research–Practice (reciprocal)",
+    "engagement": "Collaboration",
+    "note": "Combines a member network with a structured resource repository; especially relevant to R4P.",
+    "url": "https://nnerpp.rice.edu/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Education",
+    "sectors": [
+      "Education & youth"
+    ],
+    "host": "Kinder Institute for Urban Research, Rice University",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Curated resources; partnership network; peer learning; RPP development",
+    "originalDirection": "Research–Practice (reciprocal)",
+    "originalRegion": "United States",
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Communities of practice"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Curated resources; partnership network; peer learning; RPP development",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://nnerpp.rice.edu/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "3",
+    "name": "Transforming Evidence Network",
+    "sector": "Cross-sector",
+    "region": "Global",
+    "model": "Cross-sector network",
+    "functions": [
+      "Networking/community building",
+      "Researcher–practitioner matchmaking"
+    ],
+    "direction": "Research–Practice (reciprocal)",
+    "engagement": "Connection–Collaboration",
+    "note": "Connects researchers, practitioners, funders, community leaders, and intermediaries across an evidence ecosystem.",
+    "url": "https://www.pew.org/en/research-and-analysis/fact-sheets/2023/04/the-transforming-evidence-network",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Cross-sector",
+    "sectors": [
+      "Cross-sector research & impact"
+    ],
+    "host": "The Pew Charitable Trusts and partners",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Networking; knowledge sharing; matchmaking; evidence-use innovation",
+    "originalDirection": "Research–Practice (reciprocal)",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Matchmaking"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Funders"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Networking; knowledge sharing; matchmaking; evidence-use innovation",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.pew.org/en/research-and-analysis/fact-sheets/2023/04/the-transforming-evidence-network"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "4",
+    "name": "Research Impact Canada",
+    "sector": "Cross-sector",
+    "region": "Canada",
+    "model": "Knowledge-mobilization network",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "direction": "Research–Practice (reciprocal)",
+    "engagement": "Exchange–Collaboration",
+    "note": "Useful model for integrating resources, training, and community building.",
+    "url": "https://researchimpact.ca/about-us/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Cross-sector",
+    "sectors": [
+      "Cross-sector research & impact"
+    ],
+    "host": "Research Impact Canada network",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Resources; training; communities of practice; institutional capacity building",
+    "originalDirection": "Research–Practice (reciprocal)",
+    "originalRegion": "Canada",
+    "mechanisms": [
+      "Communities of practice",
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Resources; training; communities of practice; institutional capacity building",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://researchimpact.ca/about-us/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "5",
+    "name": "Community-Based Research Canada",
+    "sector": "Community research",
+    "region": "Canada",
+    "model": "Membership network",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "direction": "Research–Practice–Community (reciprocal)",
+    "engagement": "Collaboration–Co-production",
+    "note": "Treats community organizations as active network participants rather than knowledge recipients.",
+    "url": "https://www.communityresearchcanada.ca/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Community research",
+    "sectors": [
+      "Community development & civic participation"
+    ],
+    "host": "Community-Based Research Canada",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Communities of practice; webinars; training; member network; conferences; resources",
+    "originalDirection": "Research–Practice–Community (reciprocal)",
+    "originalRegion": "Canada",
+    "mechanisms": [
+      "Communities of practice",
+      "Webinars and events",
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Communities of practice; webinars; training; member network; conferences; resources",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.communityresearchcanada.ca/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "6",
+    "name": "Research to Action",
+    "sector": "International development",
+    "region": "Global",
+    "model": "Knowledge platform",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Resource sharing"
+    ],
+    "direction": "Research to Practice / Research–Practice (reciprocal)",
+    "engagement": "Access–Exchange",
+    "note": "Strong practitioner-friendly presentation of research and knowledge-mobilization resources.",
+    "url": "https://www.researchtoaction.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "International development",
+    "sectors": [
+      "International development & humanitarian action"
+    ],
+    "host": "CommsConsult",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Research uptake; communication resources; researcher/practitioner experiences",
+    "originalDirection": "Research to Practice / Research–Practice (reciprocal)",
+    "originalRegion": "Global",
+    "mechanisms": [],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Research uptake; communication resources; researcher/practitioner experiences",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.researchtoaction.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "7",
+    "name": "What Works Network",
+    "sector": "Public services",
+    "region": "United Kingdom",
+    "model": "Evidence intermediary network",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "direction": "Two-way research–practice exchange",
+    "engagement": "Access–Exchange",
+    "note": "Illustrates how evidence infrastructure can build both supply of and demand for usable evidence.",
+    "url": "https://www.gov.uk/guidance/what-works-network",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Public services",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "UK What Works Network; Evaluation Task Force secretariat",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Knowledge broker / intermediary",
+    "originalFunctions": "Evidence synthesis; commissioning; translation; capacity for evidence use",
+    "originalDirection": "Two-way research–practice exchange",
+    "originalRegion": "United Kingdom",
+    "mechanisms": [],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": false,
+    "continents": [
+      "Europe"
+    ],
+    "summary": "Evidence synthesis; commissioning; translation; capacity for evidence use",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.gov.uk/guidance/what-works-network"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "8",
+    "name": "Campbell Collaboration",
+    "sector": "Social policy",
+    "region": "Global",
+    "model": "Evidence synthesis infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing"
+    ],
+    "direction": "Research to Practice",
+    "engagement": "Access",
+    "note": "Useful benchmark for evidence organization, taxonomy, and searchable resources.",
+    "url": "https://www.campbellcollaboration.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Social policy",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "Campbell Collaboration",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Systematic reviews; evidence and gap maps; knowledge translation",
+    "originalDirection": "Research to Practice",
+    "originalRegion": "Global",
+    "mechanisms": [],
+    "directions": [
+      "Research → Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Systematic reviews; evidence and gap maps; knowledge translation",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.campbellcollaboration.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "9",
+    "name": "Centre for Homelessness Impact",
+    "sector": "Homelessness",
+    "region": "United Kingdom",
+    "model": "What Works / evidence hub",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Resource sharing"
+    ],
+    "direction": "Research to Practice / Research–Practice (reciprocal)",
+    "engagement": "Access–Collaboration",
+    "note": "Strong example of converting research evidence into usable practitioner-facing tools.",
+    "url": "https://www.homelessnessimpact.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Homelessness",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "Centre for Homelessness Impact",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Evidence tools; practitioner resources; evidence-informed improvement",
+    "originalDirection": "Research to Practice / Research–Practice (reciprocal)",
+    "originalRegion": "United Kingdom",
+    "mechanisms": [],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": false,
+    "continents": [
+      "Europe"
+    ],
+    "summary": "Evidence tools; practitioner resources; evidence-informed improvement",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.homelessnessimpact.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "10",
+    "name": "Youth Endowment Fund Evidence Toolkit",
+    "sector": "Youth services",
+    "region": "United Kingdom",
+    "model": "Interactive evidence platform",
+    "functions": [
+      "Resource sharing"
+    ],
+    "direction": "Research to Practice",
+    "engagement": "Access",
+    "note": "Useful model for separating underlying evidence from an accessible practitioner interface.",
+    "url": "https://youthendowmentfund.org.uk/toolkit/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Youth services",
+    "sectors": [
+      "Education & youth"
+    ],
+    "host": "Youth Endowment Fund",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Evidence and gap maps; accessible toolkit; implementation information",
+    "originalDirection": "Research to Practice",
+    "originalRegion": "United Kingdom",
+    "mechanisms": [],
+    "directions": [
+      "Research → Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": false,
+    "continents": [
+      "Europe"
+    ],
+    "summary": "Evidence and gap maps; accessible toolkit; implementation information",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://youthendowmentfund.org.uk/toolkit/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "11",
+    "name": "UK Parliament Knowledge Exchange Unit",
+    "sector": "Research–policy",
+    "region": "United Kingdom",
+    "model": "Brokerage intermediary",
+    "functions": [
+      "Capacity building",
+      "Researcher–practitioner matchmaking"
+    ],
+    "direction": "Research–Policy/Practice (reciprocal)",
+    "engagement": "Connection–Collaboration",
+    "note": "Demonstrates active brokerage rather than passive resource provision.",
+    "url": "https://www.parliament.uk/get-involved/research-impact-at-the-uk-parliament/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Research–policy",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "UK Parliament",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Knowledge broker / intermediary",
+    "originalFunctions": "Training; engagement opportunities; fellowships; researcher–Parliament connections",
+    "originalDirection": "Research–Policy/Practice (reciprocal)",
+    "originalRegion": "United Kingdom",
+    "mechanisms": [
+      "Training",
+      "Matchmaking"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": false,
+    "continents": [
+      "Europe"
+    ],
+    "summary": "Training; engagement opportunities; fellowships; researcher–Parliament connections",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.parliament.uk/get-involved/research-impact-at-the-uk-parliament/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "12",
+    "name": "Engagement Australia",
+    "sector": "University–community",
+    "region": "Australia",
+    "model": "Membership / network infrastructure",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Research–Community (reciprocal)",
+    "engagement": "Exchange–Collaboration",
+    "note": "Useful model for reciprocal university–community engagement and professional community building.",
+    "url": "https://engagementaustralia.org.au/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "University–community",
+    "sectors": [
+      "Community development & civic participation"
+    ],
+    "host": "Engagement Australia",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Networking; resources; professional development; university–community partnerships",
+    "originalDirection": "Research–Community (reciprocal)",
+    "originalRegion": "Australia",
+    "mechanisms": [
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": false,
+    "continents": [
+      "Oceania"
+    ],
+    "summary": "Networking; resources; professional development; university–community partnerships",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://engagementaustralia.org.au/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "13",
+    "name": "Stanford Social Innovation Review",
+    "sector": "Social sector",
+    "region": "Global",
+    "model": "Knowledge dissemination platform",
+    "functions": [
+      "Research dissemination"
+    ],
+    "direction": "Research–Practice (reciprocal), mainly dissemination",
+    "engagement": "Access–Exchange",
+    "note": "Highly relevant third-sector example of presenting research- and practice-based knowledge in a shared space.",
+    "url": "https://ssir.org/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Official source located during template preparation; full coding not revalidated.",
+    "originalSector": "Social sector",
+    "sectors": [
+      "Nonprofit & philanthropy"
+    ],
+    "host": "Stanford Social Innovation Review, Stanford University",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Research/practice articles; webinars; conferences; podcasts",
+    "originalDirection": "Research–Practice (reciprocal), mainly dissemination",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Webinars and events"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Funders"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Research/practice articles; webinars; conferences; podcasts",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://ssir.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "14",
+    "name": "OECD Evidence Web for Education",
+    "sector": "Education",
+    "region": "Global",
+    "model": "Meta-platform + community",
+    "functions": [
+      "Resource sharing",
+      "Networking/community building"
+    ],
+    "direction": "Research–Practice (reciprocal) ↔ Broker",
+    "engagement": "Exchange–Collaboration",
+    "note": "Interesting platform-of-platforms model that could inform an R4P meta-resource.",
+    "url": "https://www.oecd.org/en/about/projects/strengthening-the-impact-of-education-research.html",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Links to the related OECD education-research project; exact Evidence Web page requires review.",
+    "originalSector": "Education",
+    "sectors": [
+      "Education & youth"
+    ],
+    "host": "Organisation for Economic Co-operation and Development (OECD)",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Meta-portal; resource bank; knowledge-broker network; research–practice community",
+    "originalDirection": "Research–Practice (reciprocal) ↔ Broker",
+    "originalRegion": "Global",
+    "mechanisms": [],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Meta-portal; resource bank; knowledge-broker network; research–practice community",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.oecd.org/en/about/projects/strengthening-the-impact-of-education-research.html"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "15",
+    "name": "WikiCharities",
+    "sector": "Nonprofit sector",
+    "region": "Global",
+    "model": "Nonprofit database + collaboration infrastructure",
+    "functions": [
+      "Resource sharing",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Practice ↔ Practice; research/resource linkage",
+    "engagement": "Connection–Collaboration",
+    "note": "Useful third-sector-specific model combining searchable organizational data, resources, transparency, and collaboration functions.",
+    "url": "https://www.wikicharities.org/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Nonprofit sector",
+    "sectors": [
+      "Nonprofit & philanthropy"
+    ],
+    "host": "WikiCharities",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Directory / collaborative database",
+    "originalFunctions": "Searchable nonprofit database; validation; resources; collaborative projects; connections",
+    "originalDirection": "Practice ↔ Practice; research/resource linkage",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Searchable resource repositories"
+    ],
+    "directions": [],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Searchable nonprofit database; validation; resources; collaborative projects; connections",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.wikicharities.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "16",
+    "name": "Seton Hall Global NGO Education Survey",
+    "sector": "Nonprofit education",
+    "region": "Global",
+    "model": "Directory / research resource infrastructure",
+    "functions": [
+      "Resource sharing"
+    ],
+    "direction": "Research → Practice/Education",
+    "engagement": "Access",
+    "note": "Adjacent resource infrastructure showing how a global, field-specific directory can organize and surface dispersed nonprofit-sector information.",
+    "url": "https://tltc.shu.edu/projects/global_ngos/asia_index.php",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Nonprofit education",
+    "sectors": [
+      "Nonprofit & philanthropy"
+    ],
+    "host": "Seton Hall University",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Directory / collaborative database",
+    "originalFunctions": "Global directory of nonprofit management and philanthropy programs and courses; regional/country browsing",
+    "originalDirection": "Research → Practice/Education",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Searchable resource repositories"
+    ],
+    "directions": [
+      "Research → Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Universities / institutions"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Global directory of nonprofit management and philanthropy programs and courses; regional/country browsing",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://tltc.shu.edu/projects/global_ngos/asia_index.php"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "17",
+    "name": "Center for Advancing Research Impact in Society (ARIS)",
+    "sector": "Cross-sector",
+    "region": "Global",
+    "model": "Research-impact network + resource hub",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Research ↔ Practice ↔ Community",
+    "engagement": "Exchange–Collaboration",
+    "note": "Strong model for combining research-impact resources, professional community, institutional capacity building, and cross-sector partnerships.",
+    "url": "https://researchinsociety.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Cross-sector",
+    "sectors": [
+      "Cross-sector research & impact"
+    ],
+    "host": "Center for Advancing Research Impact in Society (ARIS)",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Resource library; training; community; institutional initiatives; cross-sector partnerships",
+    "originalDirection": "Research ↔ Practice ↔ Community",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Resource library; training; community; institutional initiatives; cross-sector partnerships",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://researchinsociety.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "18",
+    "name": "Campus Compact",
+    "sector": "Higher education–community",
+    "region": "United States",
+    "model": "Membership network + engagement infrastructure",
+    "functions": [
+      "Resource sharing",
+      "Networking/community building",
+      "Collaborative research opportunities",
+      "Funding opportunities"
+    ],
+    "direction": "Research ↔ Community",
+    "engagement": "Exchange–Collaboration",
+    "note": "Large network supporting community-engaged scholarship and reciprocal campus-community partnerships, with tools and professional communities.",
+    "url": "https://www.compact.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Higher education–community",
+    "sectors": [
+      "Community development & civic participation"
+    ],
+    "host": "Campus Compact",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Communities of practice; engaged scholarship; resources; grants; networking; campus-community partnerships",
+    "originalDirection": "Research ↔ Community",
+    "originalRegion": "United States",
+    "mechanisms": [
+      "Communities of practice"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Communities of practice; engaged scholarship; resources; grants; networking; campus-community partnerships",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.compact.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "19",
+    "name": "EPPI Centre",
+    "sector": "Public policy",
+    "region": "United Kingdom / Global",
+    "model": "Evidence synthesis + engagement centre",
+    "functions": [
+      "Research dissemination",
+      "Resource sharing",
+      "Capacity building"
+    ],
+    "direction": "Research ↔ Policy/Practice/Public",
+    "engagement": "Access–Collaboration",
+    "note": "Shows how evidence synthesis infrastructure can incorporate practitioner/public needs and participation in the review process.",
+    "url": "https://eppi.ioe.ac.uk/cms/Default.aspx?tabid=2400",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Public policy",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "EPPI Centre, UCL",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Systematic reviews; stakeholder participation; training; guidance; review tools",
+    "originalDirection": "Research ↔ Policy/Practice/Public",
+    "originalRegion": "United Kingdom / Global",
+    "mechanisms": [
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": true,
+    "continents": [
+      "Europe"
+    ],
+    "summary": "Systematic reviews; stakeholder participation; training; guidance; review tools",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://eppi.ioe.ac.uk/cms/Default.aspx?tabid=2400"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "20",
+    "name": "3ie Evidence Hub",
+    "sector": "International development",
+    "region": "Global",
+    "model": "Evidence repository + gap-mapping platform",
+    "functions": [
+      "Research dissemination",
+      "Resource sharing"
+    ],
+    "direction": "Research → Practice/Policy",
+    "engagement": "Access–Exchange",
+    "note": "Highly relevant international-development model for searchable evidence, gap identification, and stakeholder-informed research prioritisation.",
+    "url": "https://www.3ieimpact.org/evidence-hub",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "International development",
+    "sectors": [
+      "International development & humanitarian action"
+    ],
+    "host": "International Initiative for Impact Evaluation (3ie)",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Impact evaluation repository; systematic reviews; evidence gap maps; stakeholder-informed mapping",
+    "originalDirection": "Research → Practice/Policy",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Searchable resource repositories"
+    ],
+    "directions": [
+      "Research → Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Impact evaluation repository; systematic reviews; evidence gap maps; stakeholder-informed mapping",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.3ieimpact.org/evidence-hub"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "21",
+    "name": "CTN+ Community-Centred Knowledge Mobilization Hub",
+    "sector": "Health",
+    "region": "Canada",
+    "model": "Community-centred KM hub",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Research agenda setting",
+      "Co-production"
+    ],
+    "direction": "Research + Community → Co-produced Knowledge",
+    "engagement": "Collaboration–Co-production",
+    "note": "Clear example of embedding community and knowledge users throughout research, from priority setting to dissemination.",
+    "url": "https://www.ctnplus.ca/knowledge-mobilization-hub/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Health",
+    "sectors": [
+      "Health & wellbeing"
+    ],
+    "host": "CTN+",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Community participation in research priorities; KM resources; training; co-production support",
+    "originalDirection": "Research + Community → Co-produced Knowledge",
+    "originalRegion": "Canada",
+    "mechanisms": [
+      "Training"
+    ],
+    "directions": [
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Community participation in research priorities; KM resources; training; co-production support",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.ctnplus.ca/knowledge-mobilization-hub/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "22",
+    "name": "National Co-ordinating Centre for Public Engagement (NCCPE)",
+    "sector": "Higher education–public",
+    "region": "United Kingdom",
+    "model": "Engagement support centre + professional network",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "direction": "Research ↔ Public/Community",
+    "engagement": "Exchange–Collaboration",
+    "note": "Useful infrastructure model for institutionalising engagement and building long-term skills, standards, networks, and organizational capacity.",
+    "url": "https://www.publicengagement.ac.uk/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Higher education–public",
+    "sectors": [
+      "Community development & civic participation"
+    ],
+    "host": "National Co-ordinating Centre for Public Engagement",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Research / capacity-building centre",
+    "originalFunctions": "Resources; training; consultancy; accreditation; professional network; community-university partnership guidance",
+    "originalDirection": "Research ↔ Public/Community",
+    "originalRegion": "United Kingdom",
+    "mechanisms": [
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": false,
+    "continents": [
+      "Europe"
+    ],
+    "summary": "Resources; training; consultancy; accreditation; professional network; community-university partnership guidance",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.publicengagement.ac.uk/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "23",
+    "name": "Evidence Aid",
+    "sector": "Humanitarian",
+    "region": "Global",
+    "model": "Evidence access platform (historical/inactive)",
+    "functions": [
+      "Resource sharing"
+    ],
+    "direction": "Research → Humanitarian Practice",
+    "engagement": "Access",
+    "note": "Historical example of a sector-specific evidence bridge; useful for understanding sustainability and lifecycle issues because the charity closed in 2024.",
+    "url": "https://evidenceaid.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": true,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Humanitarian",
+    "sectors": [
+      "International development & humanitarian action"
+    ],
+    "host": "Evidence Aid (historical)",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Systematic-review resources for humanitarian decision-makers; evidence access and use",
+    "originalDirection": "Research → Humanitarian Practice",
+    "originalRegion": "Global",
+    "mechanisms": [],
+    "directions": [
+      "Research → Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Systematic-review resources for humanitarian decision-makers; evidence access and use",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://evidenceaid.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "24",
+    "name": "On Think Tanks",
+    "sector": "Research–policy",
+    "region": "Global",
+    "model": "Knowledge platform + community",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Research agenda setting"
+    ],
+    "direction": "Research ↔ Policy Practice",
+    "engagement": "Access–Exchange",
+    "note": "Relevant adjacent case focused on how policy research organizations produce, communicate, and use research in policy and practice.",
+    "url": "https://onthinktanks.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Research–policy",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "On Think Tanks",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Resource / evidence hub",
+    "originalFunctions": "Research on think tanks; learning resources; conferences; capacity building; research agenda",
+    "originalDirection": "Research ↔ Policy Practice",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Webinars and events"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Research on think tanks; learning resources; conferences; capacity building; research agenda",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://onthinktanks.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "25",
+    "name": "SickKids Knowledge Translation Program",
+    "sector": "Health",
+    "region": "Canada / Global",
+    "model": "KT capacity-building program + resource hub",
+    "functions": [
+      "Resource sharing",
+      "Capacity building"
+    ],
+    "direction": "Research → Practice / reciprocal engagement",
+    "engagement": "Access–Exchange",
+    "note": "Strong professional-development model for building knowledge-translation capacity and turning evidence into implementable practice.",
+    "url": "https://www.sickkids.ca/en/learning/our-programs/knowledge-translation-program/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Health",
+    "sectors": [
+      "Health & wellbeing"
+    ],
+    "host": "The Hospital for Sick Children (SickKids)",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Research / capacity-building centre",
+    "originalFunctions": "Training; professional certificates; implementation tools; evidence-based KT resources",
+    "originalDirection": "Research → Practice / reciprocal engagement",
+    "originalRegion": "Canada / Global",
+    "mechanisms": [
+      "Training"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": true,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Training; professional certificates; implementation tools; evidence-based KT resources",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://www.sickkids.ca/en/learning/our-programs/knowledge-translation-program/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "26",
+    "name": "Africa Evidence Network (AEN)",
+    "sector": "Evidence-informed decision-making",
+    "region": "Africa",
+    "model": "Pan-African evidence network",
+    "functions": [
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "direction": "Research ↔ Policy ↔ Practice ↔ Civil Society",
+    "engagement": "Exchange–Collaboration",
+    "note": "Especially valuable Global South example connecting researchers, policymakers, civil society, citizens, and evidence intermediaries across Africa.",
+    "url": "https://africaevidencenetwork.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Evidence-informed decision-making",
+    "sectors": [
+      "Public policy & services"
+    ],
+    "host": "Africa Evidence Network",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Networking; knowledge sharing; capacity exchange; events; evidence intermediary community",
+    "originalDirection": "Research ↔ Policy ↔ Practice ↔ Civil Society",
+    "originalRegion": "Africa",
+    "mechanisms": [
+      "Webinars and events"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "global": false,
+    "continents": [
+      "Africa"
+    ],
+    "summary": "Networking; knowledge sharing; capacity exchange; events; evidence intermediary community",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://africaevidencenetwork.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "27",
+    "name": "Research for Development Impact (RDI) Network",
+    "sector": "International development",
+    "region": "Indo-Pacific",
+    "model": "Researcher–practitioner membership network",
+    "functions": [
+      "Capacity building",
+      "Networking/community building",
+      "Researcher–practitioner matchmaking"
+    ],
+    "direction": "Research ↔ Practice ↔ Policy",
+    "engagement": "Exchange–Collaboration",
+    "note": "Very close comparator for R4P: explicitly describes itself as a community of academics and practitioners and brokers connections and knowledge exchange.",
+    "url": "https://rdinetwork.org.au/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "International development",
+    "sectors": [
+      "International development & humanitarian action"
+    ],
+    "host": "Research for Development Impact Network",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Brokerage; knowledge exchange; research/evaluation capacity; practitioner–researcher connections",
+    "originalDirection": "Research ↔ Practice ↔ Policy",
+    "originalRegion": "Indo-Pacific",
+    "mechanisms": [
+      "Matchmaking"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": false,
+    "continents": [
+      "Asia",
+      "Oceania"
+    ],
+    "summary": "Brokerage; knowledge exchange; research/evaluation capacity; practitioner–researcher connections",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://rdinetwork.org.au/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "28",
+    "name": "Evidence Synthesis International (ESI)",
+    "sector": "Cross-sector",
+    "region": "Global",
+    "model": "Global evidence-synthesis partnership",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Research ↔ Evidence Users",
+    "engagement": "Exchange–Collaboration",
+    "note": "Platform-of-organizations model showing how an international partnership can coordinate shared learning, resources, and collaboration opportunities.",
+    "url": "https://evidencesynthesis.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Cross-sector",
+    "sectors": [
+      "Cross-sector research & impact"
+    ],
+    "host": "Evidence Synthesis International",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Capacity building; resource sharing; methods collaboration; advocacy; policy engagement; calls for collaboration",
+    "originalDirection": "Research ↔ Evidence Users",
+    "originalRegion": "Global",
+    "mechanisms": [
+      "Calls for partners"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Capacity building; resource sharing; methods collaboration; advocacy; policy engagement; calls for collaboration",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://evidencesynthesis.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "29",
+    "name": "Knowledge Exchange Hub",
+    "sector": "Sustainable development",
+    "region": "Global",
+    "model": "Knowledge-exchange + networking initiative",
+    "functions": [
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Research ↔ Community/Practice",
+    "engagement": "Exchange–Collaboration",
+    "note": "Smaller initiative illustrating a practice-oriented knowledge-exchange model linking academia, communities, and sustainable-development action.",
+    "url": "https://knowledgeexchangehub.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Sustainable development",
+    "sectors": [
+      "Environment & sustainability"
+    ],
+    "host": "Host organization not yet verified",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Academic knowledge exchange; strategic networking; capacity building; community collaboration",
+    "originalDirection": "Research ↔ Community/Practice",
+    "originalRegion": "Global",
+    "mechanisms": [],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners"
+    ],
+    "global": true,
+    "continents": [],
+    "summary": "Academic knowledge exchange; strategic networking; capacity building; community collaboration",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://knowledgeexchangehub.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "30",
+    "name": "Evidence Exchange Network (EENet)",
+    "sector": "Mental health & addictions",
+    "region": "Canada",
+    "model": "Knowledge-exchange network + online community",
+    "functions": [
+      "Research dissemination",
+      "Resource sharing",
+      "Networking/community building"
+    ],
+    "direction": "Research ↔ Practice ↔ Lived Experience",
+    "engagement": "Exchange–Collaboration",
+    "note": "Strong digital-community model: combines accessible evidence with member profiles, peer exchange, CoPs, and active collaboration.",
+    "url": "https://kmb.camh.ca/eenet/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Mental health & addictions",
+    "sectors": [
+      "Health & wellbeing"
+    ],
+    "host": "Centre for Addiction and Mental Health (CAMH)",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Network / community of practice",
+    "originalFunctions": "Evidence briefs; resource library; EENet Connect; communities of practice/interest; networking",
+    "originalDirection": "Research ↔ Practice ↔ Lived Experience",
+    "originalRegion": "Canada",
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Communities of practice"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": false,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Evidence briefs; resource library; EENet Connect; communities of practice/interest; networking",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://kmb.camh.ca/eenet/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "31",
+    "name": "Community-Campus Partnerships for Health (CCPH)",
+    "sector": "Community-engaged health research",
+    "region": "North America / Global",
+    "model": "Membership network + partnership infrastructure",
+    "functions": [
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "direction": "Research + Community → Co-produced Knowledge",
+    "engagement": "Collaboration–Co-production",
+    "note": "Highly relevant model of equitable community–academic partnership infrastructure, including shared decision-making and community-engaged research resources.",
+    "url": "https://ccphealth.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Preliminary mapping, 2 October 2026",
+    "linkNote": "Link supplied in source document; current availability not reviewed.",
+    "originalSector": "Community-engaged health research",
+    "sectors": [
+      "Health & wellbeing"
+    ],
+    "host": "Community-Campus Partnerships for Health",
+    "hostCountry": "Not independently verified",
+    "modelGroup": "Partnership infrastructure",
+    "originalFunctions": "Community-academic partnerships; resource library; training; technical assistance; research; coalition building",
+    "originalDirection": "Research + Community → Co-produced Knowledge",
+    "originalRegion": "North America / Global",
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Training"
+    ],
+    "directions": [
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "global": true,
+    "continents": [
+      "North America"
+    ],
+    "summary": "Community-academic partnerships; resource library; training; technical assistance; research; coalition building",
+    "engage": "Visit the official source for resources and current participation routes. Membership, fees and eligibility require checking with the provider.",
+    "isNew": false,
+    "reviewDate": "",
+    "codingNote": "Provisional recoding of the supplied preliminary mapping. Target users, host labels, functions and mechanisms require curator validation. Missing tags mean not yet coded, not necessarily absent.",
+    "sources": [
+      {
+        "title": "Official source linked in preliminary mapping / initial template",
+        "url": "https://ccphealth.org/"
+      }
+    ],
+    "hostNote": "Working host label; inherited or inferred from the platform identity, not separately reverified in this update."
+  },
+  {
+    "id": "32",
+    "name": "INTRAC — civil society research & learning",
+    "host": "INTRAC",
+    "hostCountry": "United Kingdom",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Nonprofit & philanthropy",
+      "International development & humanitarian action"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Research / capacity-building centre",
+    "modelGroup": "Research / capacity-building centre",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Training"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Funders"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Research, monitoring and evaluation guidance, and courses for civil society organizations.",
+    "note": "Combines practitioner experience with research and reusable learning resources for civil society.",
+    "engage": "Browse the M&E Universe and research publications; check current courses and fees.",
+    "url": "https://www.intrac.org/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "INTRAC — civil society research & learning — official source",
+        "url": "https://www.intrac.org/"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Institute for Voluntary Action Research (IVAR)",
+    "host": "Institute for Voluntary Action Research",
+    "hostCountry": "United Kingdom",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Nonprofit & philanthropy",
+      "Community development & civic participation"
+    ],
+    "originalSector": "",
+    "region": "United Kingdom",
+    "originalRegion": "United Kingdom",
+    "continents": [
+      "Europe"
+    ],
+    "global": false,
+    "model": "Research / capacity-building centre",
+    "modelGroup": "Research / capacity-building centre",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Collaborative research opportunities"
+    ],
+    "mechanisms": [
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice",
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Funders"
+    ],
+    "engagement": "Collaboration–Co-production",
+    "summary": "Action research and practical learning resources for charities, foundations and public agencies.",
+    "note": "A close nonprofit comparator: research is developed with organizations around the problems they face.",
+    "engage": "Explore charity and foundation resources, live projects and the contact route for research enquiries.",
+    "url": "https://www.ivar.org.uk/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Institute for Voluntary Action Research (IVAR) — official source",
+        "url": "https://www.ivar.org.uk/"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "name": "NPC Resource Hub",
+    "host": "New Philanthropy Capital (NPC)",
+    "hostCountry": "United Kingdom",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Nonprofit & philanthropy"
+    ],
+    "originalSector": "",
+    "region": "United Kingdom",
+    "originalRegion": "United Kingdom",
+    "continents": [
+      "Europe"
+    ],
+    "global": false,
+    "model": "Resource / evidence hub",
+    "modelGroup": "Resource / evidence hub",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Funders"
+    ],
+    "engagement": "Access–Exchange",
+    "summary": "Free resources, practical frameworks, research and learning events on social impact.",
+    "note": "Helps charities and funders translate research and evaluation concepts into strategy and practice. Consultancy and some events are paid.",
+    "engage": "Use the Resource Hub and events listings; check access and fees for each service.",
+    "url": "https://www.thinknpc.org/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "NPC — resources, research and learning",
+        "url": "https://www.thinknpc.org/"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "name": "PRIA — participatory research & learning",
+    "host": "Participatory Research in Asia (PRIA)",
+    "hostCountry": "India",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Nonprofit & philanthropy",
+      "Community development & civic participation"
+    ],
+    "originalSector": "",
+    "region": "India / international",
+    "originalRegion": "India / international",
+    "continents": [
+      "Asia"
+    ],
+    "global": true,
+    "model": "Research / capacity-building centre",
+    "modelGroup": "Research / capacity-building centre",
+    "functions": [
+      "Research dissemination",
+      "Resource sharing",
+      "Capacity building",
+      "Collaborative research opportunities",
+      "Co-production"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice",
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Policymakers"
+    ],
+    "engagement": "Collaboration–Co-production",
+    "summary": "Participatory research, civil society capacity building, knowledge resources and training.",
+    "note": "Provides a practitioner institution perspective from India on participation, community voice and research. Related to, but distinct from, the UNESCO Chair/K4C infrastructure.",
+    "engage": "Browse Knowledge Resources and PRIA Academy; use Engage With Us for participation enquiries.",
+    "url": "https://www.pria.org/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "PRIA — participatory research & learning — official source",
+        "url": "https://www.pria.org/"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "eBASE Africa",
+    "host": "Effective Basic Services (eBASE) Africa",
+    "hostCountry": "Cameroon",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Health & wellbeing",
+      "Education & youth"
+    ],
+    "originalSector": "",
+    "region": "Sub-Saharan Africa",
+    "originalRegion": "Sub-Saharan Africa",
+    "continents": [
+      "Africa"
+    ],
+    "global": false,
+    "model": "Knowledge broker / intermediary",
+    "modelGroup": "Knowledge broker / intermediary",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Communities of practice",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Policymakers"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Evidence-to-action resources and collaborative work on health, education and basic services.",
+    "note": "Connects research, community experience and service delivery in African settings.",
+    "engage": "Explore evidence publications and Get Involved; clinicians, teachers, researchers and community members can enquire about participation.",
+    "url": "https://www.ebaseafrica.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "eBASE Africa — official source",
+        "url": "https://www.ebaseafrica.org/"
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "SPOR Evidence Alliance",
+    "host": "SPOR Evidence Alliance; supported by CIHR and partner organizations",
+    "hostCountry": "Canada",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Health & wellbeing"
+    ],
+    "originalSector": "",
+    "region": "Canada / international",
+    "originalRegion": "Canada / international",
+    "continents": [
+      "North America"
+    ],
+    "global": true,
+    "model": "Partnership infrastructure",
+    "modelGroup": "Partnership infrastructure",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Collaborative research opportunities",
+      "Research agenda setting",
+      "Co-production"
+    ],
+    "mechanisms": [
+      "Webinars and events",
+      "Training",
+      "Practitioner research-question submission",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Practice → Research",
+      "Research ↔ Practice",
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Policymakers"
+    ],
+    "engagement": "Collaboration–Co-production",
+    "summary": "Patient-oriented evidence synthesis, research-query services, training and shared priority setting.",
+    "note": "Makes practice- and patient-originated questions visible as inputs to research; a useful model for an R4P question-submission route.",
+    "engage": "Explore research-query services or the patient/public request route; review eligibility and training information.",
+    "url": "https://sporevidencealliance.ca/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "SPOR Evidence Alliance — official source",
+        "url": "https://sporevidencealliance.ca/"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Sax Institute — evidence & partnership services",
+    "host": "Sax Institute",
+    "hostCountry": "Australia",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Health & wellbeing",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Australia",
+    "originalRegion": "Australia",
+    "continents": [
+      "Oceania"
+    ],
+    "global": false,
+    "model": "Knowledge broker / intermediary",
+    "modelGroup": "Knowledge broker / intermediary",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training"
+    ],
+    "directions": [
+      "Practice → Research",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Evidence reviews, policy dialogues, a resource hub and events connecting research with health decisions.",
+    "note": "Illustrates sustained brokerage between research organizations and health decision-makers. Some services require commissioning.",
+    "engage": "Start with the Resource Hub, Evidence Check and training/event pages; ask about access conditions.",
+    "url": "https://www.saxinstitute.org.au/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Sax Institute — evidence & partnership services — official source",
+        "url": "https://www.saxinstitute.org.au/"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "AIFS — Child Family Community Australia resources",
+    "host": "Australian Institute of Family Studies (AIFS)",
+    "hostCountry": "Australia",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Health & wellbeing",
+      "Community development & civic participation"
+    ],
+    "originalSector": "",
+    "region": "Australia",
+    "originalRegion": "Australia",
+    "continents": [
+      "Oceania"
+    ],
+    "global": false,
+    "model": "Resource / evidence hub",
+    "modelGroup": "Resource / evidence hub",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training"
+    ],
+    "directions": [
+      "Research → Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "engagement": "Access–Exchange",
+    "summary": "Practice guides, policy papers, webinars and tools for child and family service professionals.",
+    "note": "A reusable evidence-to-practice infrastructure relevant to nonprofit providers working with families and communities.",
+    "engage": "Search practice resources by topic or format and explore the Child Family Community Australia programme.",
+    "url": "https://aifs.gov.au/resources",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "AIFS — Child Family Community Australia resources — official source",
+        "url": "https://aifs.gov.au/resources"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "CLEAR Anglophone Africa",
+    "host": "CLEAR-AA, University of the Witwatersrand",
+    "hostCountry": "South Africa",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Public policy & services",
+      "International development & humanitarian action"
+    ],
+    "originalSector": "",
+    "region": "Anglophone Africa",
+    "originalRegion": "Anglophone Africa",
+    "continents": [
+      "Africa"
+    ],
+    "global": false,
+    "model": "Research / capacity-building centre",
+    "modelGroup": "Research / capacity-building centre",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Training",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers",
+      "Knowledge brokers"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Evaluation capacity development, publications and peer learning across African institutions.",
+    "note": "Connects academia, civil society, evaluation practitioners and public decision-makers around evidence use.",
+    "engage": "Explore publications, products and services, and country partnerships; check current learning opportunities.",
+    "url": "https://www.wits.ac.za/clear-aa/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "CLEAR Anglophone Africa — official source",
+        "url": "https://www.wits.ac.za/clear-aa/"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Center for Effective Philanthropy (CEP)",
+    "host": "Center for Effective Philanthropy",
+    "hostCountry": "United States",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Nonprofit & philanthropy"
+    ],
+    "originalSector": "",
+    "region": "United States / international",
+    "originalRegion": "United States / international",
+    "continents": [
+      "North America"
+    ],
+    "global": true,
+    "model": "Research / capacity-building centre",
+    "modelGroup": "Research / capacity-building centre",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Funders"
+    ],
+    "engagement": "Access–Exchange",
+    "summary": "Philanthropy research, practice guides, learning cohorts and stakeholder-feedback tools.",
+    "note": "Brings empirical work and grantee perspectives into grantmaker learning. Assessment and advisory services may be paid.",
+    "engage": "Browse research reports and guides, then check learning programmes or assessment services.",
+    "url": "https://cep.org/",
+    "scope": "Nonprofit / social sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Center for Effective Philanthropy (CEP) — official source",
+        "url": "https://cep.org/"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "name": "BetterEvaluation",
+    "host": "Global Evaluation Initiative (GEI)",
+    "hostCountry": "International partnership",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Cross-sector research & impact",
+      "International development & humanitarian action"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Resource / evidence hub",
+    "modelGroup": "Resource / evidence hub",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "engagement": "Access–Exchange",
+    "summary": "A curated global knowledge platform on evaluation methods, tools and practical choices.",
+    "note": "A strong platform-of-platforms comparator: it brings distributed methods and experience into a task-oriented navigation system.",
+    "engage": "Browse evaluation tasks, methods and resources; follow links to original guidance and partners.",
+    "url": "https://www.betterevaluation.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official descriptions reviewed 24 October 2026 via indexed source text and GEI. Direct automated access to BetterEvaluation was restricted; visitor access was not independently tested.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "BetterEvaluation — official about page",
+        "url": "https://www.betterevaluation.org/about"
+      },
+      {
+        "title": "GEI — BetterEvaluation knowledge platform",
+        "url": "https://www.globalevaluationinitiative.org/en/what-we-do/knowledge-sharing/betterevaluation"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Participedia",
+    "host": "Participedia research and practitioner network",
+    "hostCountry": "International network",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Community development & civic participation",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Directory / collaborative database",
+    "modelGroup": "Directory / collaborative database",
+    "functions": [
+      "Research dissemination",
+      "Resource sharing",
+      "Networking/community building",
+      "Co-production"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Researcher/practitioner directories",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice",
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners"
+    ],
+    "engagement": "Exchange–Co-production",
+    "summary": "A shared database of participatory processes, methods and organizations, with downloadable data and contribution routes.",
+    "note": "Lets researchers, activists and practitioners document and compare democratic innovations together.",
+    "engage": "Search cases and methods, download data, or create an account to contribute entries subject to platform rules.",
+    "url": "https://participedia.net/about",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Participedia — official source",
+        "url": "https://participedia.net/about"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "UNESCO Chair / Knowledge for Change (K4C)",
+    "host": "UNESCO Chair in CBR and Social Responsibility in Higher Education; University of Victoria and PRIA",
+    "hostCountry": "Canada / India",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Community development & civic participation",
+      "Education & youth"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Partnership infrastructure",
+    "modelGroup": "Partnership infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities",
+      "Co-production"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice",
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Universities / institutions"
+    ],
+    "engagement": "Collaboration–Co-production",
+    "summary": "Community-based research resources, mentor training and a network of knowledge co-creation hubs.",
+    "note": "Links university and practitioner institutions across North–South relationships. Separately coded from PRIA because K4C is a distinct partnership and training infrastructure.",
+    "engage": "Explore K4C hubs, mentor training, knowledge resources and the Become a K4C Hub route.",
+    "url": "https://www.unescochair-cbrsr.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "UNESCO Chair / Knowledge for Change (K4C) — official source",
+        "url": "https://www.unescochair-cbrsr.org/"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "name": "CLACSO — Platforms for Social Dialogue (PDS)",
+    "host": "Latin American Council of Social Sciences (CLACSO)",
+    "hostCountry": "Argentina / regional network",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Community development & civic participation",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Latin America and the Caribbean",
+    "originalRegion": "Latin America and the Caribbean",
+    "continents": [
+      "South America",
+      "North America"
+    ],
+    "global": false,
+    "model": "Partnership infrastructure",
+    "modelGroup": "Partnership infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Networking/community building",
+      "Collaborative research opportunities",
+      "Research agenda setting",
+      "Co-production"
+    ],
+    "mechanisms": [
+      "Webinars and events",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Research ↔ Practice",
+      "Research + Practice → Co-produced Knowledge"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Policymakers"
+    ],
+    "engagement": "Collaboration–Co-production",
+    "summary": "Multi-actor spaces connecting social science, public priorities and regional dialogue.",
+    "note": "Offers a Latin American model for connecting researchers, social actors and policy agendas around inequality and collective action. Latin America and the Caribbean spans more than one continent.",
+    "engage": "Read the PDS themes and explore CLACSO working groups, publications and participation announcements.",
+    "url": "https://www.clacso.org/plataformas-para-el-dialogo-social/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official indexed PDS text reviewed 24 October 2026. Direct automated retrieval returned a server error; current visitor access may vary.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "CLACSO — Platforms for Social Dialogue (PDS) — official source",
+        "url": "https://www.clacso.org/plataformas-para-el-dialogo-social/"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "European Community of Practice on Evidence-Informed Policymaking",
+    "host": "European Commission, Joint Research Centre / Knowledge4Policy",
+    "hostCountry": "European Union",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Public policy & services",
+      "Cross-sector research & impact"
+    ],
+    "originalSector": "",
+    "region": "Europe",
+    "originalRegion": "Europe",
+    "continents": [
+      "Europe"
+    ],
+    "global": false,
+    "model": "Network / community of practice",
+    "modelGroup": "Network / community of practice",
+    "functions": [
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Networking/community building",
+      "Collaborative research opportunities"
+    ],
+    "mechanisms": [
+      "Communities of practice",
+      "Webinars and events"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers",
+      "Knowledge brokers"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "A practitioner-focused community for knowledge brokers, policymakers and researchers working on evidence use.",
+    "note": "An explicit community-of-practice model for people building science–policy connections and institutional capacity.",
+    "engage": "Follow the community link from Knowledge4Policy and use its expression-of-interest form; joining is subject to fit and review.",
+    "url": "https://knowledge4policy.ec.europa.eu/evidence-informed-policymaking_en",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "European Community of Practice — official description",
+        "url": "https://knowledge-for-policy.ec.europa.eu/node/84489_el"
+      },
+      {
+        "title": "Evidence-Informed Policymaking — Knowledge4Policy",
+        "url": "https://knowledge4policy.ec.europa.eu/evidence-informed-policymaking_en"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "Abdul Latif Jameel Poverty Action Lab (J-PAL)",
+    "host": "J-PAL, Massachusetts Institute of Technology and regional partner universities",
+    "hostCountry": "United States / international network",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "International development & humanitarian action",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Partnership infrastructure",
+    "modelGroup": "Partnership infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities",
+      "Funding opportunities"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Researcher/practitioner directories",
+      "Webinars and events",
+      "Training",
+      "Collaborative grants"
+    ],
+    "directions": [
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers",
+      "Funders"
+    ],
+    "engagement": "Collaboration",
+    "summary": "Research resources, policy insights, training and partnerships for evaluating poverty-reduction programmes.",
+    "note": "Shows how researcher networks can support practice partnerships, evidence use and sustained evaluation capacity.",
+    "engage": "Use Research Resources, Courses and Evidence to Policy; review initiative-specific funding and partnership eligibility.",
+    "url": "https://www.povertyactionlab.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Abdul Latif Jameel Poverty Action Lab (J-PAL) — official source",
+        "url": "https://www.povertyactionlab.org/"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "Innovations for Poverty Action (IPA)",
+    "host": "Innovations for Poverty Action",
+    "hostCountry": "United States / international network",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "International development & humanitarian action",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Partnership infrastructure",
+    "modelGroup": "Partnership infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Collaborative research opportunities",
+      "Funding opportunities"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Training",
+      "Collaborative grants"
+    ],
+    "directions": [
+      "Practice → Research",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers",
+      "Funders"
+    ],
+    "engagement": "Collaboration",
+    "summary": "Practice-facing evaluation partnerships, evidence-use support, research methods and funding opportunities.",
+    "note": "Has separate routes for practitioners and researchers, connecting programme decisions with research design and implementation.",
+    "engage": "Start with For Practitioners or For Researchers and consult current research-funding opportunities.",
+    "url": "https://poverty-action.org/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Innovations for Poverty Action (IPA) — official source",
+        "url": "https://poverty-action.org/"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Global Development Network (GDN)",
+    "host": "Global Development Network",
+    "hostCountry": "India / international organization",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "International development & humanitarian action",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Funding / research-support infrastructure",
+    "modelGroup": "Funding / research-support infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Funding opportunities"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Training"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Policymakers"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Policy-oriented research support, mentoring, calls and resources for researchers in low- and middle-income countries.",
+    "note": "Relevant to locally led research capacity and connecting contextual research with development decisions.",
+    "engage": "Explore calls, mentoring, current programmes and GlobalDev; confirm eligibility for each opportunity.",
+    "url": "https://www.gdn.int/",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "About GDN",
+        "url": "https://gdn.int/about-gdn"
+      },
+      {
+        "title": "GDN programmes, calls and resources",
+        "url": "https://www.gdn.int/"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "IDRC — research funding & knowledge resources",
+    "host": "International Development Research Centre (IDRC)",
+    "hostCountry": "Canada",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "International development & humanitarian action",
+      "Environment & sustainability"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Funding / research-support infrastructure",
+    "modelGroup": "Funding / research-support infrastructure",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Funding opportunities"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Webinars and events",
+      "Collaborative grants",
+      "Calls for partners"
+    ],
+    "directions": [
+      "Research → Practice",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Funders"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Research funding calls, project knowledge and learning resources for development challenges.",
+    "note": "Adds a reusable funding infrastructure to the bank; specific calls may support institutional or collaborative research. Eligibility varies.",
+    "engage": "Browse the funding page and research projects; check deadlines, geography and partnership requirements on each call.",
+    "url": "https://idrc-crdi.ca/en/funding",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "IDRC funding infrastructure",
+        "url": "https://idrc-crdi.ca/en/funding"
+      },
+      {
+        "title": "IDRC knowledge and research",
+        "url": "https://idrc-crdi.ca/en"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "Evidence-informed Policy Network (EVIPNet)",
+    "host": "World Health Organization (WHO)",
+    "hostCountry": "International organization",
+    "hostNote": "Host identified from the linked official source.",
+    "sectors": [
+      "Health & wellbeing",
+      "Public policy & services"
+    ],
+    "originalSector": "",
+    "region": "Global",
+    "originalRegion": "Global",
+    "continents": [],
+    "global": true,
+    "model": "Network / community of practice",
+    "modelGroup": "Network / community of practice",
+    "functions": [
+      "Research dissemination",
+      "Knowledge translation/mobilization",
+      "Resource sharing",
+      "Capacity building",
+      "Networking/community building",
+      "Collaborative research opportunities",
+      "Research agenda setting"
+    ],
+    "mechanisms": [
+      "Searchable resource repositories",
+      "Communities of practice",
+      "Webinars and events",
+      "Training",
+      "Joint publications and knowledge products"
+    ],
+    "directions": [
+      "Practice → Research",
+      "Research ↔ Practice"
+    ],
+    "originalDirection": "",
+    "originalFunctions": "",
+    "users": [
+      "Researchers",
+      "Practitioners",
+      "Community partners",
+      "Policymakers",
+      "Knowledge brokers"
+    ],
+    "engagement": "Exchange–Collaboration",
+    "summary": "Country and regional knowledge-translation networks linking researchers, policymakers and civil society.",
+    "note": "A sustained brokerage model using stakeholder priorities, evidence briefs and dialogue to inform health policy.",
+    "engage": "Explore EVIPNet resources, country/regional networks and the How to join guidance.",
+    "url": "https://www.who.int/initiatives/evidence-informed-policy-network",
+    "scope": "Adjacent / cross-sector",
+    "historical": false,
+    "source": "Web expansion, 24 October 2026",
+    "linkNote": "Official source reviewed 24 October 2026; classifications are provisional. Participation, fees and open calls must be checked with the provider.",
+    "codingNote": "Official source reviewed; analytical codes are provisional. No tag implies no confirmed coding, not proof that a function is absent.",
+    "reviewDate": "2026-10-24",
+    "isNew": true,
+    "sources": [
+      {
+        "title": "Evidence-informed Policy Network (EVIPNet) — official source",
+        "url": "https://www.who.int/initiatives/evidence-informed-policy-network"
+      }
+    ]
+  }
+];
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeURL=s=>{try{const u=new URL(s);return u.protocol==='https:'?u.href:''}catch{return ''}};
-const rules={evidence:/evidence|review|tool|resource|translation|uptake/i,community:/network|communit|peer|membership/i,partnership:/partnership|collaborat|co-production|matchmaking|brokerage|joint research/i,learning:/training|capacity|learning|professional development|certificate/i,funding:/funding|grants/i};
+const PAGE_SIZE=12;let limit=PAGE_SIZE,displayed=[],toastTimer;
 let saved=new Set();try{const a=JSON.parse(localStorage.getItem('r4p-saved-v1')||'[]');if(Array.isArray(a))saved=new Set(a.map(String))}catch{}
-let displayed=[];let toastTimer;
-function notify(s){$('toast').textContent=s;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,3500)}
-function matches(r){const q=$('search').value.trim().toLowerCase();const corpus=Object.values(r).join(' ').toLowerCase();return(!q||corpus.includes(q))&&(!$('scope').value||r.scope===$('scope').value)&&(!$('region').value||r.region.includes($('region').value))&&(!$('sector').value||r.sector===$('sector').value)&&(!$('purpose').value||rules[$('purpose').value].test(r.functions+' '+r.model))&&(!$('engagement').value||r.engagement.includes($('engagement').value))&&(!$('saved').checked||saved.has(r.id))&&($('historical').checked||!r.historical)}
-function render(){displayed=RESOURCES.filter(matches).sort((a,b)=>($('sort').value==='relevance'?Number(b.scope==='Nonprofit / social sector')-Number(a.scope==='Nonprofit / social sector'):0)||a.name.localeCompare(b.name));$('count').textContent=displayed.length+' of '+RESOURCES.length+' initiatives'+($('historical').checked?' · includes historical examples':' · historical examples hidden');$('cards').innerHTML=displayed.map(r=>`<article class="card"><div class="card-top"><span class="badge ${r.scope==='Nonprofit / social sector'?'direct':''}">${r.historical?'Historical example':esc(r.scope)}</span><button class="bookmark" data-save="${r.id}" aria-label="${saved.has(r.id)?'Unsave':'Save'} ${esc(r.name)}" aria-pressed="${saved.has(r.id)}">${saved.has(r.id)?'★':'☆'}</button></div><h3>${esc(r.name)}</h3><div class="meta">${esc(r.region)} · ${esc(r.sector)}</div><p>${esc(r.functions.replace(/;/g,' ·'))}</p><div class="tags"><span class="tag">${esc(r.engagement)}</span><span class="tag">Preliminary mapping</span></div><div class="card-bottom"><button class="details" data-detail="${r.id}">View resource details →</button><a href="${esc(safeURL(r.url))}" target="_blank" rel="noopener noreferrer" aria-label="Visit ${esc(r.name)} (opens in new tab)">Visit site ↗</a></div></article>`).join('')||'<div class="empty"><h3>No resources match these filters.</h3><p>Try another keyword or reset the collection.</p><button class="btn" id="empty-reset">Reset filters</button></div>';if($('empty-reset'))$('empty-reset').onclick=reset}
-function reset(){['search','scope','region','sector','purpose','engagement'].forEach(id=>$(id).value='');$('saved').checked=false;$('historical').checked=false;$('sort').value='relevance';render()}
+const selected=group=>[...document.querySelectorAll(`input[name="${group}"]:checked`)].map(x=>x.value);
+const any=(values,choices)=>!choices.length||choices.some(x=>values.includes(x));
+function matches(r){
+ const q=$('search').value.trim().toLowerCase();const corpus=JSON.stringify(r).toLowerCase();
+ const continent=$('region').value;
+ const geo=!continent||(continent==='Global'?r.global:r.continents.includes(continent)||($('include-global').checked&&r.global));
+ return (!q||q.split(/\s+/).every(word=>corpus.includes(word)))&&geo&&
+ (!$('scope').value||r.scope===$('scope').value)&&(!$('sector').value||r.sectors.includes($('sector').value))&&
+ (!$('model').value||r.modelGroup===$('model').value)&&(!$('user').value||r.users.includes($('user').value))&&
+ (!$('engagement').value||r.engagement.includes($('engagement').value))&&
+ any(r.functions,selected('functions'))&&any(r.mechanisms,selected('mechanisms'))&&any(r.directions,selected('directions'))&&
+ (!$('saved').checked||saved.has(r.id))&&(!$('new-only').checked||r.isNew)&&($('historical').checked||!r.historical);
+}
+function notify(s){$('toast').textContent=s;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,4000)}
+function render(resetPage=true){
+ if(resetPage)limit=PAGE_SIZE;
+ displayed=RESOURCES.filter(matches).sort((a,b)=>($('sort').value==='newest'?Number(b.isNew)-Number(a.isNew):$('sort').value==='relevance'?Number(b.scope==='Nonprofit / social sector')-Number(a.scope==='Nonprofit / social sector'):0)||a.name.localeCompare(b.name));
+ $('include-global-wrap').hidden=!$('region').value||$('region').value==='Global';
+ ['functions','mechanisms','directions'].forEach(group=>{const n=selected(group).length;$('selected-'+group).textContent=n?n+' selected':'Any';});
+ const shown=displayed.slice(0,limit);
+ $('count').textContent=`${displayed.length} of ${RESOURCES.length} initiatives match · showing ${shown.length}${$('historical').checked?' · historical included':' · historical hidden'}`;
+ $('cards').innerHTML=shown.map(r=>`<article class="card"><div class="card-top"><div class="badges"><span class="badge ${r.scope==='Nonprofit / social sector'?'direct':''}">${r.historical?'Historical example':esc(r.scope)}</span>${r.isNew?'<span class="badge new-badge">Added 24 Oct</span>':''}</div><button class="bookmark" data-save="${r.id}" aria-label="${saved.has(r.id)?'Unsave':'Save'} ${esc(r.name)}" aria-pressed="${saved.has(r.id)}">${saved.has(r.id)?'★':'☆'}</button></div><h3>${esc(r.name)}</h3><div class="meta">${esc(r.region)} · ${esc(r.sectors.join(' / '))}</div><p>${esc(r.summary)}</p><div class="tags">${r.functions.slice(0,3).map(f=>`<span class="tag">${esc(f)}</span>`).join('')}${r.functions.length>3?`<span class="tag">+${r.functions.length-3} functions</span>`:''}</div><div class="card-bottom"><button class="details" data-detail="${r.id}">View platform details →</button><a href="${esc(safeURL(r.url))}" target="_blank" rel="noopener noreferrer" aria-label="Visit ${esc(r.name)} (opens in new tab)">Visit site ↗</a></div></article>`).join('')||'<div class="empty"><h3>No platforms match these filters.</h3><p>Try fewer filters, include global resources, or reset the collection. Empty results indicate a gap in this working sample, not that no platforms exist.</p><button class="btn" id="empty-reset">Reset filters</button></div>';
+ $('load-more').hidden=shown.length>=displayed.length;$('load-more').textContent=`Show ${Math.min(PAGE_SIZE,displayed.length-shown.length)} more resources ↓`;
+ if($('empty-reset'))$('empty-reset').onclick=reset;
+}
+function reset(){['search','scope','region','sector','model','user','engagement'].forEach(id=>$(id).value='');['saved','historical','new-only'].forEach(id=>$(id).checked=false);document.querySelectorAll('.facet-options input').forEach(x=>x.checked=false);$('include-global').checked=true;$('sort').value='relevance';render()}
 function show(html){$('modal-content').innerHTML=html;$('modal').showModal()}
-function detail(id){const r=RESOURCES.find(r=>r.id===id);if(!r)return;const fields={'Field':r.sector,'Geographic scope':r.region,'Platform model':r.model,'Main functions':r.functions,'Exchange direction':r.direction,'Engagement depth':r.engagement,'Sector relevance':r.scope,'Source':r.source,'Link review':r.linkNote};show(`<span class="badge">${r.historical?'Historical example · source marks inactive':'Preliminary mapping · review required'}</span><h2>${esc(r.name)}</h2><p>${esc(r.note)}</p><dl>${Object.entries(fields).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl><h3>How to engage</h3><p>Visit the original website to explore its resources and check current membership, events or partnership routes. Participation conditions and opportunities have not been independently verified.</p><a class="btn primary" href="${esc(safeURL(r.url))}" target="_blank" rel="noopener noreferrer">Explore original source ↗</a>`)}
-function download(text,name,type){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-function exportCSV(){const keys=['name','sector','region','scope','model','functions','direction','engagement','url','historical','source','linkNote'];const cell=v=>'"'+String(v??'').replace(/^[=+@\-\t\r]/,"'$&").replace(/"/g,'""')+'"';download('\uFEFF'+[keys,...displayed.map(r=>keys.map(k=>r[k]))].map(row=>row.map(cell).join(',')).join('\r\n'),'r4p-resources.csv','text/csv;charset=utf-8');notify('Exported '+displayed.length+' resources')}
-function suggest(){show(`<div class="eyebrow">Community contributions</div><h2>Suggest a resource.</h2><p>Prepare a suggestion for curator review. This form does not send or store a submission. Download your draft, or open a GitHub issue if the repository has been configured.</p><form id="suggest-form" class="form"><label for="s-name">Resource name *</label><input id="s-name" required maxlength="180"><label for="s-url">Official website *</label><input id="s-url" type="url" required placeholder="https://" maxlength="500"><label for="s-field">Field & geographic scope *</label><input id="s-field" required maxlength="250"><label for="s-reason">Who is it for, and how does it connect research and practice? *</label><textarea id="s-reason" required maxlength="3000"></textarea><label for="s-route">How can people engage?</label><textarea id="s-route" maxlength="1500"></textarea><button type="submit" class="btn primary">Download suggestion draft ↓</button>${safeURL(REPOSITORY_URL)?'<button type="button" class="btn" id="issue" style="margin-left:8px">Open GitHub issue ↗</button>':''}</form>`);const body=()=>`## Resource suggestion\n\nName: ${$('s-name').value}\nWebsite: ${$('s-url').value}\nField and scope: ${$('s-field').value}\n\n### Relevance\n${$('s-reason').value}\n\n### Participation route\n${$('s-route').value}\n\nStatus: Pending curator review\n`;const form=$('suggest-form');form.onsubmit=e=>{e.preventDefault();download(body(),'r4p-resource-suggestion.md','text/markdown;charset=utf-8');notify('Draft downloaded. No submission has been sent.')};if($('issue'))$('issue').onclick=()=>{if(!form.reportValidity())return;const repo=safeURL(REPOSITORY_URL).replace(/\/$/,'');if(!/^https:\/\/github\.com\/[^/]+\/[^/]+$/.test(repo)){notify('Please configure a valid GitHub repository URL.');return}const a=document.createElement('a');a.href=repo+'/issues/new?title='+encodeURIComponent('Resource suggestion: '+$('s-name').value)+'&body='+encodeURIComponent(body());a.target='_blank';a.rel='noopener noreferrer';a.click()}}
-[...new Set(RESOURCES.map(r=>r.sector))].sort().forEach(s=>{const o=document.createElement('option');o.value=s;o.textContent=s;$('sector').append(o)});
-['scope','region','sector','purpose','engagement','sort','saved','historical'].forEach(id=>$(id).addEventListener('change',render));$('search').addEventListener('input',render);$('reset').onclick=reset;$('export').onclick=exportCSV;
-$('cards').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.detail)detail(b.dataset.detail);if(b.dataset.save){const id=b.dataset.save;saved.has(id)?saved.delete(id):saved.add(id);let ok=true;try{localStorage.setItem('r4p-saved-v1',JSON.stringify([...saved]))}catch{ok=false}render();notify(ok?(saved.has(id)?'Saved on this device':'Removed from your saved resources'):'Saved for this visit only; browser storage is unavailable.')}};
-document.querySelectorAll('[data-suggest]').forEach(b=>b.onclick=suggest);document.querySelectorAll('[data-path]').forEach(b=>b.onclick=()=>{reset();$('purpose').value=b.dataset.path;render();$('library').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})});document.querySelector('.close').onclick=()=>$('modal').close();$('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('modal').close()}});$('total').textContent=RESOURCES.length;render();
+function join(a){return a.length?a.join('; '):'Not yet coded'}
+function detail(id){
+ const r=RESOURCES.find(x=>x.id===id);if(!r)return;
+ const sections=[['Basic characteristics',{'Name':r.name,'Host organization':r.host,'Host country / location':r.hostCountry,'Geographic scope':r.region,'Continental tags':join(r.continents)+(r.global?(r.continents.length?'; Global':' · Global-access platform'):''),'Sector / field':join(r.sectors),'Target users':join(r.users),'Institutional model':r.modelGroup,'Original model description':r.isNew?'See institutional model above':r.model}],['Functions',{'Coded functions':join(r.functions)}],['Mechanisms',{'Coded mechanisms':join(r.mechanisms)}],['Direction of knowledge exchange',{'Coded directions':join(r.directions),'Engagement depth':r.engagement}]];
+ show(`<span class="badge">${r.historical?'Historical example':'Working analytical record'}${r.isNew?' · Added 24 October 2026':''}</span><h2>${esc(r.name)}</h2><p>${esc(r.summary)}</p><h3>Why this platform may be useful</h3><p>${esc(r.note)}</p>${sections.map(([title,fields])=>`<h3 class="detail-section">${esc(title)}</h3><dl>${Object.entries(fields).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`).join('')}<h3 class="detail-section">How to engage</h3><p>${esc(r.engage)}</p><a class="btn primary" href="${esc(safeURL(r.url))}" target="_blank" rel="noopener noreferrer">Explore original platform ↗</a><h3 class="detail-section">Sources & review</h3><p>${esc(r.source)}${r.reviewDate?' · Source review: '+esc(r.reviewDate):''}</p><ul class="source-list">${r.sources.map(s=>`<li><a href="${esc(safeURL(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a></li>`).join('')}</ul><p class="review-note">${esc(r.linkNote)} ${esc(r.hostNote)} ${esc(r.codingNote)}</p>${!r.isNew?`<details class="original"><summary>Original preliminary mapping text</summary><p><b>Field:</b> ${esc(r.originalSector)}<br><b>Functions:</b> ${esc(r.originalFunctions)}<br><b>Exchange:</b> ${esc(r.originalDirection)}</p></details>`:''}`);
+}
+function download(text,name,type){const u=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function exportCSV(){const keys=['id','name','host','hostCountry','region','continents','global','sectors','users','modelGroup','functions','mechanisms','directions','engagement','summary','note','engage','url','scope','historical','isNew','source','reviewDate','sources','linkNote','codingNote'];const cell=v=>{let s=Array.isArray(v)?v.map(x=>typeof x==='object'?x.title+': '+x.url:x).join(' | '):String(v??'');return '"'+s.replace(/^[=+@\-\t\r]/,"'$&").replace(/"/g,'""')+'"'};download('\uFEFF'+[keys,...displayed.map(r=>keys.map(k=>r[k]))].map(row=>row.map(cell).join(',')).join('\r\n'),'r4p-resources.csv','text/csv;charset=utf-8');notify('Exported all '+displayed.length+' matching records')}
+function suggest(){
+ if(safeURL(SUGGESTION_FORM_URL)){const a=document.createElement('a');a.href=safeURL(SUGGESTION_FORM_URL);a.target='_blank';a.rel='noopener noreferrer';a.click();return}
+ show(`<div class="eyebrow">Community contributions</div><h2>Prepare a resource suggestion.</h2><p>This prototype downloads your suggestion as a draft. It does not send it to the curator or save it on a server. Keep the downloaded file and share it with the curator separately.</p><form id="suggest-form" class="form"><label for="s-name">Platform name *</label><input id="s-name" required maxlength="180"><label for="s-host">Host organization</label><input id="s-host" maxlength="200"><label for="s-url">Official website *</label><input id="s-url" type="url" required placeholder="https://" maxlength="500"><label for="s-field">Field & geographic scope *</label><input id="s-field" required maxlength="250"><label for="s-reason">Who is it for, and how does it connect research and practice? *</label><textarea id="s-reason" required maxlength="3000"></textarea><label for="s-route">Functions, mechanisms & participation routes</label><textarea id="s-route" maxlength="2000"></textarea><button type="submit" class="btn primary">Download suggestion draft ↓</button>${safeURL(REPOSITORY_URL)?'<button type="button" class="btn" id="issue">Open GitHub issue ↗</button>':''}</form>`);
+ const body=()=>`## Platform suggestion\n\nName: ${$('s-name').value}\nHost: ${$('s-host').value}\nWebsite: ${$('s-url').value}\nField and scope: ${$('s-field').value}\n\n### Users and research–practice relevance\n${$('s-reason').value}\n\n### Functions, mechanisms and participation\n${$('s-route').value}\n\nStatus: Pending curator review\n`;
+ const form=$('suggest-form');form.onsubmit=e=>{e.preventDefault();download(body(),'r4p-resource-suggestion.md','text/markdown;charset=utf-8');notify('Draft downloaded to your device. No suggestion has been sent.')};
+ if($('issue'))$('issue').onclick=()=>{if(!form.reportValidity())return;const repo=safeURL(REPOSITORY_URL).replace(/\/$/,'');if(!/^https:\/\/github\.com\/[^/]+\/[^/]+$/.test(repo)){notify('Configure a valid GitHub repository URL.');return}const a=document.createElement('a');a.href=repo+'/issues/new?title='+encodeURIComponent('Resource suggestion: '+$('s-name').value)+'&body='+encodeURIComponent(body());a.target='_blank';a.rel='noopener noreferrer';a.click()};
+}
+function options(id,values){values.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v==='Oceania'?'Oceania (including Australia)':v;$(id).append(o)})}
+options('sector',TAXONOMY.sectors);options('region',[...TAXONOMY.continents,'Global']);options('model',TAXONOMY.models);options('user',TAXONOMY.users);
+['functions','mechanisms','directions'].forEach(group=>{$('options-'+group).innerHTML=TAXONOMY[group].map((v,i)=>`<label class="facet-choice"><input type="checkbox" id="${group}-${i}" name="${group}" value="${esc(v)}"><span>${esc(v)}</span></label>`).join('');});
+['scope','region','sector','model','user','engagement','sort','saved','historical','new-only','include-global'].forEach(id=>$(id).addEventListener('change',()=>render()));document.querySelectorAll('.facet-options input').forEach(x=>x.addEventListener('change',()=>render()));$('search').addEventListener('input',()=>render());$('reset').onclick=reset;$('export').onclick=exportCSV;$('load-more').onclick=()=>{limit+=PAGE_SIZE;render(false)};
+$('cards').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.detail)detail(b.dataset.detail);if(b.dataset.save){const id=b.dataset.save;saved.has(id)?saved.delete(id):saved.add(id);let ok=true;try{localStorage.setItem('r4p-saved-v1',JSON.stringify([...saved]))}catch{ok=false}render(false);notify(ok?(saved.has(id)?'Saved on this device':'Removed from your saved resources'):'Saved for this visit only; browser storage is unavailable.')}};
+document.querySelectorAll('[data-suggest]').forEach(b=>b.onclick=suggest);
+const pathFunctions={evidence:['Knowledge translation/mobilization','Resource sharing'],community:['Networking/community building'],partnership:['Researcher–practitioner matchmaking','Collaborative research opportunities','Co-production']};
+document.querySelectorAll('[data-path]').forEach(b=>b.onclick=()=>{reset();const choices=pathFunctions[b.dataset.path];document.querySelectorAll('input[name="functions"]').forEach(x=>x.checked=choices.includes(x.value));$('facet-functions').open=true;render();$('library').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})});
+document.querySelector('.close').onclick=()=>$('modal').close();$('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('modal').close()}});$('total').textContent=RESOURCES.length;$('new-count').textContent=RESOURCES.filter(r=>r.isNew).length;render();
+
 </script>
 </body>
 </html>
